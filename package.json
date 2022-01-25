@@ -1,0 +1,22 @@
+{
+  "name": "sigaa-chrome-extension",
+  "version": "1.0.0",
+  "description": "Torne o SIGAA Mais acessível",
+  "main": "popup.html",
+  "author": "Arthur Assuncao",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "lint": "npx eslint popup.js"
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-jest": "^26.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "prettier": "^2.5.1",
+    "prettier-eslint": "^13.0.0"
+  }
+}

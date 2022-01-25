@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "SIGAA mais acessível",
+  "version": "1.0",
+  "description": "Torne o sistema SIGAA mais acessível",
+  "icons": {
+    "128": "img/logo-128.png",
+    "48": "img/logo-48.png",
+    "16": "img/logo-16.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "img/logo-128.png",
+      "48": "img/logo-48.png",
+      "16": "img/logo-16.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["https://sig.ifsudestemg.edu.br/sigaa/"],
+  "content_scripts": [
+    {
+      "matches": ["https://sig.ifsudestemg.edu.br/sigaa/*"],
+      "css": ["sigaa.css"],
+      "js": ["sigaa.js"]
+    }
+  ],
+  "permissions": ["activeTab", "tabs"]
+}

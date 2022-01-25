@@ -1,0 +1,13 @@
+input {
+  min-height: 48px;
+}
+
+input[type='submit'],
+input[type='button'] {
+  min-width: 160px;
+}
+
+input[type='password'],
+input[type='text'] {
+  min-width: 240px;
+}
