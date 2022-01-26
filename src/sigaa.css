@@ -1,0 +1,49 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+input {
+  min-height: 48px;
+}
+
+input[type='submit'], input[type='button'] {
+  min-width: 140px;
+  border: none;
+  transition: background-color 0.5s ease;
+  font-size: 1.05rem;
+}
+
+input[type='submit']:hover, input[type='button']:hover {
+  background-color: #24aeff;
+  cursor: pointer;
+}
+
+input[type='password'], input[type='text'] {
+  min-width: 240px;
+  padding-left: 8px;
+  border-color: transparent;
+  outline-color: transparent;
+}
+
+input[type='password']:focus, input[type='text']:focus {
+  outline-color: #24aeff;
+}
+
+body #cabecalho {
+  min-height: 108px;
+  background-color: #c4d2eb;
+}
+
+body #cabecalho #painel-usuario #menu-usuario ul li a {
+  min-height: 32px;
+  background-position: 5px 12px;
+}
+
+body #cabecalho #painel-usuario #menu-usuario ul li a#show-modulos,
+body #cabecalho #painel-usuario #menu-usuario ul li a {
+  display: flex;
+  align-items: center;
+}

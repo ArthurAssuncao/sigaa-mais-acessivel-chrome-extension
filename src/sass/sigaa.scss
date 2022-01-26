@@ -1,0 +1,58 @@
+$color-primary: #24aeff;
+$color-primary-2: #2beed9;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+input {
+  min-height: 48px;
+
+  &[type='submit'],
+  &[type='button'] {
+    min-width: 140px;
+    border: none;
+    transition: background-color 0.5s ease;
+    font-size: 1.05rem;
+
+    &:hover {
+      background-color: $color-primary;
+      cursor: pointer;
+    }
+  }
+
+  &[type='password'],
+  &[type='text'] {
+    min-width: 240px;
+    padding-left: 8px;
+    border-color: transparent;
+    outline-color: transparent;
+
+    &:focus {
+      outline-color: $color-primary;
+    }
+  }
+}
+
+body #cabecalho {
+  min-height: 108px;
+  background-color: #c4d2eb;
+
+  #painel-usuario #menu-usuario {
+    ul li {
+      a {
+        min-height: 32px;
+        background-position: 5px 12px;
+      }
+
+      a#show-modulos,
+      a {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

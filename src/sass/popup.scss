@@ -1,0 +1,56 @@
+$color-primary: #24aeff;
+$color-primary-2: #2beed9;
+$color-gradient: linear-gradient(
+  to bottom right,
+  $color-primary,
+  $color-primary-2
+);
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  button {
+    border: none;
+    outline: none;
+    background: none;
+  }
+
+  .shutdown-container {
+    display: flex;
+    flex-direction: column;
+
+    .shutdown-button {
+      &[data-active='false'] {
+        .shutdown-icon {
+          path {
+            fill: #ccc;
+          }
+        }
+      }
+
+      .shutdown-icon {
+        min-width: 64px;
+        min-height: 64px;
+
+        fill: $color-gradient;
+        transition: filter 0.5s ease;
+
+        path {
+          transition: fill 0.5s ease;
+        }
+
+        &:hover {
+          cursor: pointer;
+          filter: drop-shadow(0px 0px 3px $color-primary);
+        }
+      }
+    }
+
+    .shutdown-label {
+      text-align: center;
+      padding: 4px;
+    }
+  }
+}
