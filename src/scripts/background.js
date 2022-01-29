@@ -18,7 +18,7 @@ async function getLocalStorageValue (key) {
 }
 
 async function getState () {
-  return await getLocalStorageValue ('sigaa-extension-active');
+  return getLocalStorageValue ('sigaa-extension-active');
 }
 
 function changeIcon (value) {
@@ -72,7 +72,7 @@ function updateIcon (activeInfo) {
 
 chrome.tabs.onActivated.addListener (activeInfo => updateIcon (activeInfo));
 
-if (!getState ()) {
-  updateState ('true');
-}
-console.log (getState ());
+// if (!await getState ()) {
+//   updateState ('true');
+// }
+// console.log (await getState ());

@@ -858,13 +858,9 @@ function _getState() {
       while (1) {
         switch (_context2.prev = _context2.next) {
           case 0:
-            _context2.next = 2;
-            return getLocalStorageValue('sigaa-extension-active');
+            return _context2.abrupt("return", getLocalStorageValue('sigaa-extension-active'));
 
-          case 2:
-            return _context2.abrupt("return", _context2.sent);
-
-          case 3:
+          case 1:
           case "end":
             return _context2.stop();
         }
@@ -926,12 +922,9 @@ function updateIcon(activeInfo) {
 
 chrome.tabs.onActivated.addListener(function (activeInfo) {
   return updateIcon(activeInfo);
-});
-
-if (!getState()) {
-  updateState('true');
-}
-
-console.log(getState());
+}); // if (!await getState ()) {
+//   updateState ('true');
+// }
+// console.log (await getState ());
 
 },{"@babel/runtime/helpers/asyncToGenerator":1,"@babel/runtime/helpers/interopRequireDefault":2,"@babel/runtime/regenerator":3}]},{},[5]);

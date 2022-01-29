@@ -1,3 +1,29 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c4d2eb;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #15428b;
+}
+
+html body {
+  background-color: #fafafa;
+}
+
 html,
 body {
   padding: 0;
@@ -26,6 +52,7 @@ input[type='password'], input[type='text'] {
   padding-left: 8px;
   border-color: transparent;
   outline-color: transparent;
+  background: rgba(36, 174, 255, 0.1);
 }
 
 input[type='password']:focus, input[type='text']:focus {
@@ -33,17 +60,208 @@ input[type='password']:focus, input[type='text']:focus {
 }
 
 body #cabecalho {
-  min-height: 108px;
+  min-height: 76px;
   background-color: #c4d2eb;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-body #cabecalho #painel-usuario #menu-usuario ul li a {
+body #cabecalho #info-sistema {
+  width: 100%;
   min-height: 32px;
-  background-position: 5px 12px;
+  display: flex;
+  align-items: center;
+}
+
+body #cabecalho #info-sistema div.dir {
+  display: flex;
+  min-height: 32px;
+  align-items: center;
+}
+
+body #cabecalho #info-sistema div.dir span.acessibilidade a,
+body #cabecalho #info-sistema div.dir span.sair-sistema a {
+  font-size: 1.2em;
+  padding: 8px 4px;
+}
+
+body #cabecalho #info-sistema div.dir span.acessibilidade a:hover,
+body #cabecalho #info-sistema div.dir span.sair-sistema a:hover {
+  background-color: rgba(36, 174, 255, 0.1);
+}
+
+body #cabecalho #info-sistema div.dir span#tempoSessao {
+  font-size: 1.1em;
+}
+
+body #cabecalho #painelDadosUsuario {
+  margin-top: 5px !important;
+}
+
+body #cabecalho #painelDadosUsuario p {
+  font-size: 0.8rem !important;
+}
+
+body #cabecalho #painelDadosUsuario p a {
+  font-size: 0.7rem !important;
+}
+
+body #cabecalho #painelDadosUsuario div {
+  font-size: 0.7rem !important;
 }
 
 body #cabecalho #painel-usuario #menu-usuario ul li a#show-modulos,
 body #cabecalho #painel-usuario #menu-usuario ul li a {
   display: flex;
   align-items: center;
+  min-height: 32px;
+  background-position: 5px 12px;
+  transition: all 0.5s ease;
+}
+
+#menu-dropdown .wrapper table.ThemeOfficeMenu tbody tr td.ThemeOfficeMainItem,
+#menu-dropdown .wrapper table.ThemeOfficeMenu tbody tr td.ThemeOfficeMainItemHover {
+  padding: 8px 4px;
+  transition: background 0.5s ease;
+}
+
+#menu-dropdown .wrapper table.ThemeOfficeMenu tbody tr td.ThemeOfficeMainItem:hover,
+#menu-dropdown .wrapper table.ThemeOfficeMenu tbody tr td.ThemeOfficeMainItemHover:hover {
+  cursor: pointer;
+}
+
+#menu-dropdown
+.wrapper
+div.ThemeOfficeSubMenu
+table.ThemeOfficeSubMenuTable
+tbody tr.ThemeOfficeMenuItem,
+#menu-dropdown
+.wrapper
+div.ThemeOfficeSubMenu
+table.ThemeOfficeSubMenuTable
+tbody tr.ThemeOfficeMenuItemHover {
+  transition: background 0.5s ease;
+}
+
+#menu-dropdown
+.wrapper
+div.ThemeOfficeSubMenu
+table.ThemeOfficeSubMenuTable
+tbody tr.ThemeOfficeMenuItem td,
+#menu-dropdown
+.wrapper
+div.ThemeOfficeSubMenu
+table.ThemeOfficeSubMenuTable
+tbody tr.ThemeOfficeMenuItemHover td {
+  padding: 8px 4px;
+}
+
+#menu-dropdown
+.wrapper
+div.ThemeOfficeSubMenu
+table.ThemeOfficeSubMenuTable
+tbody tr.ThemeOfficeMenuItem td:hover,
+#menu-dropdown
+.wrapper
+div.ThemeOfficeSubMenu
+table.ThemeOfficeSubMenuTable
+tbody tr.ThemeOfficeMenuItemHover td:hover {
+  cursor: pointer;
+}
+
+.formulario table.listagem > tbody tr:hover {
+  background-color: rgba(36, 174, 255, 0.1);
+}
+
+.formulario table.listagem > tbody tr:hover td#tdTipo a {
+  font-weight: bold;
+}
+
+.formulario table.listagem > tbody tr td {
+  padding: 12px 3px;
+}
+
+.ui-button {
+  min-height: 32px;
+  min-width: 32px;
+}
+
+#auxEsconderSubMenu {
+  display: none;
+}
+
+#menuTurmaVirtual {
+  float: right;
+  position: relative;
+}
+
+.ui-layout-pane table tbody tr td,
+#barraEsquerda table tbody tr td {
+  color: #15428b;
+  min-height: 32px;
+  height: 32px !important;
+  background: linear-gradient(180deg, #d5e4f5 0%, #aec9ec 50%, #d5e4f5 100%) !important;
+}
+
+.ui-layout-pane .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-header-act,
+.ui-layout-pane .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-header,
+#barraEsquerda .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-header-act,
+#barraEsquerda .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-header {
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+  background-position-x: 6px;
+  text-indent: 24px;
+}
+
+.ui-layout-pane .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-content-exterior table tbody tr .rich-panelbar-content a div,
+#barraEsquerda .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-content-exterior table tbody tr .rich-panelbar-content a div {
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 2px;
+  text-indent: 0px;
+  padding-left: 16px;
+  min-height: 32px;
+  height: 32px;
+  transition: background 0.5s ease;
+}
+
+.ui-layout-pane .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-content-exterior table tbody tr .rich-panelbar-content a div img,
+#barraEsquerda .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-content-exterior table tbody tr .rich-panelbar-content a div img {
+  margin-left: 0px !important;
+  margin-right: 6px;
+}
+
+.rich-stglpanel-header.headerBloco {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  min-height: 32px;
+  height: 32px !important;
+  background: linear-gradient(180deg, #d5e4f5 0%, #aec9ec 50%, #d5e4f5 100%) !important;
+}
+
+.rich-stglpanel-body .progress .progress-bar {
+  background: linear-gradient(45deg, #d5e4f5 0%, #aec9ec 50%, #d5e4f5 100%);
+  color: #15428b;
+}
+
+#formAva .topico-aula .titulo {
+  background: #f0f0f0;
+  padding: 10px !important;
+  color: #111;
+}
+
+#formAva .topico-aula .conteudotopico {
+  border: 1px solid #ccc;
+  padding: 6px;
+  border-top: 0;
+  font-size: 0.8rem !important;
+  line-height: 1rem !important;
 }

@@ -1,5 +1,29 @@
-$color-primary: #24aeff;
-$color-primary-2: #2beed9;
+@import '_colors.scss';
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $color-bg-blue;
+  transition: background 0.5s ease;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $color-text-title-section;
+}
+
+html body {
+  background-color: $color-background;
+}
 
 html,
 body {
@@ -30,6 +54,7 @@ input {
     padding-left: 8px;
     border-color: transparent;
     outline-color: transparent;
+    background: $color-primary-opac-10;
 
     &:focus {
       outline-color: $color-primary;
@@ -38,21 +63,209 @@ input {
 }
 
 body #cabecalho {
-  min-height: 108px;
+  min-height: 76px;
   background-color: #c4d2eb;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  #info-sistema {
+    width: 100%;
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+
+    div.dir {
+      display: flex;
+      min-height: 32px;
+      align-items: center;
+
+      span.acessibilidade,
+      span.sair-sistema {
+        a {
+          font-size: 1.2em;
+          padding: 8px 4px;
+
+          &:hover {
+            background-color: $color-primary-opac-10;
+          }
+        }
+      }
+      span#tempoSessao {
+        font-size: 1.1em;
+      }
+    }
+  }
+
+  #painelDadosUsuario {
+    margin-top: 5px !important;
+    p {
+      font-size: 0.8rem !important;
+      a {
+        font-size: 0.7rem !important;
+      }
+    }
+    div {
+      font-size: 0.7rem !important;
+    }
+  }
 
   #painel-usuario #menu-usuario {
     ul li {
-      a {
-        min-height: 32px;
-        background-position: 5px 12px;
-      }
-
       a#show-modulos,
       a {
         display: flex;
         align-items: center;
+        min-height: 32px;
+        background-position: 5px 12px;
+        transition: all 0.5s ease;
       }
     }
+  }
+}
+
+// menu
+#menu-dropdown .wrapper table.ThemeOfficeMenu tbody tr {
+  td.ThemeOfficeMainItem,
+  td.ThemeOfficeMainItemHover {
+    padding: 8px 4px;
+    transition: background 0.5s ease;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+#menu-dropdown
+  .wrapper
+  div.ThemeOfficeSubMenu
+  table.ThemeOfficeSubMenuTable
+  tbody {
+  tr.ThemeOfficeMenuItem,
+  tr.ThemeOfficeMenuItemHover {
+    transition: background 0.5s ease;
+
+    td {
+      padding: 8px 4px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.formulario table.listagem > tbody tr {
+  &:hover {
+    background-color: $color-primary-opac-10;
+    td#tdTipo a {
+      font-weight: bold;
+    }
+  }
+
+  td {
+    padding: 12px 3px;
+  }
+}
+
+.ui-button {
+  min-height: 32px;
+  min-width: 32px;
+}
+
+#auxEsconderSubMenu {
+  display: none;
+}
+
+#menuTurmaVirtual {
+  float: right;
+  position: relative;
+}
+
+// painel lateral esquerdo
+$size-height-painel-item: 32px;
+.ui-layout-pane,
+#barraEsquerda {
+  table tbody tr td {
+    color: $color-text-title-section;
+    min-height: $size-height-painel-item;
+    height: $size-height-painel-item !important;
+    background: $color-blue-gradient !important;
+  }
+
+  .rich-panelbar.rich-panelbar-b {
+    .rich-panelbar.rich-panelbar-interior {
+      .rich-panelbar-header-act,
+      .rich-panelbar-header {
+        display: flex;
+        align-items: center;
+        min-height: $size-height-painel-item;
+        background-position-x: 6px;
+        text-indent: 24px;
+      }
+      .rich-panelbar-content-exterior {
+        table tbody tr {
+          .rich-panelbar-content a div {
+            display: flex;
+            align-items: center;
+            padding-top: 0;
+            padding-bottom: 2px;
+            text-indent: 0px;
+            padding-left: 16px;
+
+            min-height: $size-height-painel-item;
+            height: $size-height-painel-item;
+
+            transition: background 0.5s ease;
+
+            img {
+              margin-left: 0px !important;
+              margin-right: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.rich-stglpanel-header.headerBloco {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  min-height: $size-height-painel-item;
+  height: $size-height-painel-item !important;
+  background: $color-blue-gradient !important;
+}
+
+.rich-stglpanel-body {
+  .progress {
+    .progress-bar {
+      background: $color-blue-gradient-45deg;
+      color: $color-text-title-section;
+    }
+  }
+}
+
+// topicos de aula
+
+#formAva .topico-aula {
+  .titulo {
+    background: rgb(240, 240, 240);
+    padding: 10px !important;
+    color: #111;
+  }
+
+  .conteudotopico {
+    border: 1px solid #ccc;
+    padding: 6px;
+    border-top: 0;
+    font-size: 0.8rem !important;
+    line-height: 1rem !important;
   }
 }
