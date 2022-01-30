@@ -1,9 +1,1 @@
-(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
-"use strict";
-
-chrome.runtime.sendMessage({
-  action: 'updateIcon',
-  value: true
-});
-
-},{}]},{},[1]);
+!function r(o,i,a){function s(t,e){if(!i[t]){if(!o[t]){var n="function"==typeof require&&require;if(!e&&n)return n(t,!0);if(u)return u(t,!0);throw(e=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",e}n=i[t]={exports:{}},o[t][0].call(n.exports,function(e){return s(o[t][1][e]||e)},n,n.exports,r,o,i,a)}return i[t].exports}for(var u="function"==typeof require&&require,e=0;e<a.length;e++)s(a[e]);return s}({1:[function(e,t,n){"use strict";var r;chrome.runtime.onMessage.addListener(function(e,t,n){e.changeState&&(document.documentElement.dataset.sigaaExtensionActive=e.newState)}),chrome.runtime.sendMessage({action:"updateIcon",value:!0}),(r=chrome.runtime.connect({name:"sigaa-extension"})).postMessage({action:"getState"}),r.onMessage.addListener(function(e){"ok"==e.response&&(e=e.state,document.documentElement.dataset.sigaaExtensionActive=e)})},{}]},{},[1]);

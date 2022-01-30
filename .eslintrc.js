@@ -1,10 +1,6 @@
 module.exports = {
-  plugins: [
-    'prettier',
-    'eslint-comments',
-    'jest',
-    'promise',
-  ],
+  parser: '@babel/eslint-parser',
+  plugins: ['prettier', 'eslint-comments', 'jest', 'promise'],
   extends: [
     'airbnb/base',
     'plugin:eslint-comments/recommended',
@@ -27,7 +23,7 @@ module.exports = {
     },
   },
   env: {
-    // "browser": true,
+    browser: true,
     node: true,
     es6: true,
     es2020: true,

@@ -1,7 +1,48 @@
-function start () {
-  document
-    .getElementById ('shutdown-icon')
-    .addEventListener ('click', changeState);
+async function start () {
+  console.log ('popup.js start');
+
+  const shutdownIcon = document.getElementById ('shutdown-icon');
+
+  shutdownIcon.addEventListener ('click', changeState);
+
+  updateState ();
+}
+
+function updateState () {
+  const port = chrome.runtime.connect ({name: 'sigaa-extension'});
+  port.postMessage ({action: 'getState'});
+  port.onMessage.addListener (function (response) {
+    if (response.response == 'ok') {
+      const shutdownButton = document.getElementById ('shutdown-button');
+      const isActivated = response.state;
+      console.log ('extension ' + isActivated);
+      shutdownButton.dataset.active = isActivated === 'true' ? 'true' : 'false';
+    }
+  });
+}
+
+function updateIcon (value) {
+  chrome.runtime.sendMessage ({
+    action: 'updateIcon',
+    value: value,
+  });
+}
+
+function activeExtension (value) {
+  chrome.runtime.sendMessage ({
+    action: 'activeExtension',
+    value: value,
+  });
+}
+
+function sendMessageToContentScript (newState) {
+  chrome.tabs.query ({active: true, currentWindow: true}, function (tabs) {
+    chrome.tabs.sendMessage (
+      tabs[0].id,
+      {changeState: true, newState: newState},
+      function (response) {}
+    );
+  });
 }
 
 function changeState () {
@@ -13,13 +54,14 @@ function changeState () {
 
   if (newState) {
     shutdownLabel.textContent = 'Extensão Ativada';
+    activeExtension (true);
   } else {
     shutdownLabel.textContent = 'Extensão Desativada';
-    chrome.runtime.sendMessage ({
-      action: 'updateIcon',
-      value: false,
-    });
+    activeExtension (false);
   }
+  sendMessageToContentScript (newState);
 }
 
-start ();
+window.onload = function () {
+  start ();
+};
