@@ -35,6 +35,76 @@ html[data-sigaa-extension-active='true'] body {
 
 html[data-sigaa-extension-active='true'] input {
   min-height: 48px;
+  transition: background 0.5s ease;
+}
+
+html[data-sigaa-extension-active='true'] input:hover {
+  outline-color: #24aeff;
+}
+
+html[data-sigaa-extension-active='true'] input:focus-visible {
+  outline-color: #24aeff;
+}
+
+html[data-sigaa-extension-active='true'] input[type='checkbox'] {
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(8px);
+  transition: background 0.5s ease;
+}
+
+html[data-sigaa-extension-active='true'] input[type='checkbox']:hover {
+  cursor: pointer;
+}
+
+html[data-sigaa-extension-active='true'] input[type='checkbox']:hover:before {
+  background-color: #ccc;
+}
+
+html[data-sigaa-extension-active='true'] input[type='checkbox']:hover:checked:before {
+  background-color: #15428b;
+}
+
+html[data-sigaa-extension-active='true'] input[type='checkbox']:before {
+  content: '';
+  height: 26px;
+  width: 26px;
+  min-height: 26px;
+  min-width: 26px;
+  display: inline-block;
+  background-color: #ececec;
+  visibility: visible;
+  box-sizing: border-box;
+  transition: background 0.5s ease;
+}
+
+html[data-sigaa-extension-active='true'] input[type='checkbox']:before:hover {
+  background-color: #ccc;
+}
+
+html[data-sigaa-extension-active='true'] input[type='checkbox']:checked:before {
+  height: 32px;
+  width: 32px;
+  min-height: 32px;
+  min-width: 32px;
+  background-color: #24aeff;
+  mask-image: url("https://api.iconify.design/ant-design/check-square-filled.svg");
+  -webkit-mask-image: url("https://api.iconify.design/ant-design/check-square-filled.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: 32px;
+  -webkit-mask-size: 32px;
+}
+
+html[data-sigaa-extension-active='true'] input[type='checkbox']:checked:before:hover {
+  background-color: #15428b;
+}
+
+html[data-sigaa-extension-active='true'] input[type='file'] {
+  border: none;
+  transform: translateY(8px);
 }
 
 html[data-sigaa-extension-active='true'] input[type='submit'], html[data-sigaa-extension-active='true'] input[type='button'] {
@@ -63,13 +133,38 @@ html[data-sigaa-extension-active='true'] input[type='password']:focus, html[data
   outline-color: #24aeff;
 }
 
+html[data-sigaa-extension-active='true'] ::-webkit-file-upload-button {
+  background: rgba(36, 174, 255, 0.1);
+  color: #111;
+  padding: 12px;
+  border: none;
+}
+
+html[data-sigaa-extension-active='true'] ::-webkit-file-upload-button:hover {
+  cursor: pointer;
+  background: #24aeff;
+}
+
 html[data-sigaa-extension-active='true'] select {
   min-width: 32px;
   max-width: 90%;
   height: 32px;
   border: none;
   background: rgba(36, 174, 255, 0.1);
+  transition: background 0.5s ease;
+}
+
+html[data-sigaa-extension-active='true'] select:focus-visible {
+  outline-color: #24aeff;
+}
+
+html[data-sigaa-extension-active='true'] select#formAva\:possuiNota {
+  margin-left: 6px;
+}
+
+html[data-sigaa-extension-active='true'] select:hover {
   cursor: pointer;
+  outline: 2px solid #24aeff;
 }
 
 html[data-sigaa-extension-active='true'] body #cabecalho {
@@ -210,6 +305,49 @@ html[data-sigaa-extension-active='true'] #menuTurmaVirtual {
   position: relative;
 }
 
+html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default:hover span.ui-icon {
+  background-color: #111;
+}
+
+html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoPortal, html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoImprimir, html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAulasPaginadas, html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoTrocarTurma, html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoOpcoesTurma, html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAtivarEdicao {
+  background-image: none;
+  background-color: #15428b;
+}
+
+html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoPortal:hover, html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoImprimir:hover, html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAulasPaginadas:hover, html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoTrocarTurma:hover, html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoOpcoesTurma:hover, html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAtivarEdicao:hover {
+  background-color: #111;
+}
+
+html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoPortal {
+  -webkit-mask-image: url("https://api.iconify.design/clarity/home-solid.svg");
+          mask-image: url("https://api.iconify.design/clarity/home-solid.svg");
+}
+
+html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoImprimir {
+  -webkit-mask-image: url("https://api.iconify.design/fluent/print-24-filled.svg");
+          mask-image: url("https://api.iconify.design/fluent/print-24-filled.svg");
+}
+
+html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAulasPaginadas {
+  -webkit-mask-image: url("https://api.iconify.design/heroicons-outline/switch-horizontal.svg");
+          mask-image: url("https://api.iconify.design/heroicons-outline/switch-horizontal.svg");
+}
+
+html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoTrocarTurma {
+  -webkit-mask-image: url("https://api.iconify.design/akar-icons/arrow-back-thick-fill.svg");
+          mask-image: url("https://api.iconify.design/akar-icons/arrow-back-thick-fill.svg");
+}
+
+html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoOpcoesTurma {
+  -webkit-mask-image: url("https://api.iconify.design/ci/settings-filled.svg");
+          mask-image: url("https://api.iconify.design/ci/settings-filled.svg");
+}
+
+html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAtivarEdicao {
+  -webkit-mask-image: url("https://api.iconify.design/clarity/edit-solid.svg");
+          mask-image: url("https://api.iconify.design/clarity/edit-solid.svg");
+}
+
 html[data-sigaa-extension-active='true'] .ui-layout-pane:not(.ui-layout-center) table tbody tr td,
 html[data-sigaa-extension-active='true'] #barraEsquerda table tbody tr td {
   color: #15428b;
@@ -302,4 +440,78 @@ html[data-sigaa-extension-active='true'] #formAva .topico-aula .conteudotopico {
   border-top: 0;
   font-size: 0.8rem !important;
   line-height: 1rem !important;
+}
+
+html[data-sigaa-extension-active='true'] .required-items {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+html[data-sigaa-extension-active='true'] .required,
+html[data-sigaa-extension-active='true'] .obrigatorio {
+  background-image: none;
+  position: relative;
+}
+
+html[data-sigaa-extension-active='true'] .required span#labelNotaMaximaUnidade,
+html[data-sigaa-extension-active='true'] .obrigatorio span#labelNotaMaximaUnidade {
+  display: block;
+}
+
+html[data-sigaa-extension-active='true'] .required:before,
+html[data-sigaa-extension-active='true'] .obrigatorio:before {
+  content: '';
+  width: 32px;
+  height: 32px;
+  background-color: #ff6961;
+  display: inline-block;
+  position: absolute;
+  right: -8px;
+  width: 14px;
+  height: 14px;
+  transform: scale(0.8);
+  mask-image: url("https://api.iconify.design/ant-design/star-filled.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-position: right;
+          mask-position: right;
+  -webkit-mask-image: url("https://api.iconify.design/ant-design/star-filled.svg");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: right top;
+}
+
+html[data-sigaa-extension-active='true'] .botoes .other-actions {
+  display: flex;
+  transform: translateX(-100%);
+}
+
+html[data-sigaa-extension-active='true'] #formAva\:dataInicioDispArquivoSpan_calendarDivm,
+html[data-sigaa-extension-active='true'] .jscalendar-DB-div-style {
+  left: 32px !important;
+  top: -24px !important;
+}
+
+html[data-sigaa-extension-active='true'] #formAva\:dataInicioDispArquivoSpan_calendarDivm .jscalendar-DB-title-background-style,
+html[data-sigaa-extension-active='true'] .jscalendar-DB-div-style .jscalendar-DB-title-background-style {
+  background-color: rgba(36, 174, 255, 0.1);
+}
+
+html[data-sigaa-extension-active='true'] #formAva\:dataInicioDispArquivoSpan_calendarDivm .jscalendar-DB-body-style td,
+html[data-sigaa-extension-active='true'] .jscalendar-DB-div-style .jscalendar-DB-body-style td {
+  padding: 0;
+}
+
+html[data-sigaa-extension-active='true'] #formAva\:dataInicioDispArquivoSpan_calendarDivm .jscalendar-DB-normal-day-style,
+html[data-sigaa-extension-active='true'] .jscalendar-DB-div-style .jscalendar-DB-normal-day-style {
+  padding: 4px;
+}
+
+html[data-sigaa-extension-active='true'] #formAva\:dataInicioDispArquivoSpan_selectYearDiv {
+  left: 182px !important;
+  top: 8px !important;
+}
+
+html[data-sigaa-extension-active='true'] #formAva\:dataInicioDispArquivoSpan_selectMonthDiv {
+  left: 107px !important;
+  top: 8px !important;
 }

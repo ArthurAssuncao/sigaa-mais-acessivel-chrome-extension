@@ -34,6 +34,78 @@ html[data-sigaa-extension-active='true'] {
 
   input {
     min-height: 48px;
+    transition: background 0.5s ease;
+
+    &:hover {
+      outline-color: $color-primary;
+    }
+
+    &:focus-visible {
+      outline-color: $color-primary;
+    }
+
+    &[type='checkbox'] {
+      visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateY(8px);
+      transition: background 0.5s ease;
+
+      &:hover {
+        cursor: pointer;
+
+        &:before {
+          background-color: #ccc;
+        }
+        &:checked {
+          &:before {
+            background-color: $color-accent;
+          }
+        }
+      }
+
+      &:before {
+        content: '';
+        height: 26px;
+        width: 26px;
+        min-height: 26px;
+        min-width: 26px;
+        display: inline-block;
+        background-color: #ececec;
+        visibility: visible;
+        box-sizing: border-box;
+        transition: background 0.5s ease;
+
+        &:hover {
+          background-color: #ccc;
+        }
+      }
+
+      &:checked {
+        &:before {
+          &:hover {
+            background-color: $color-accent;
+          }
+          height: 32px;
+          width: 32px;
+          min-height: 32px;
+          min-width: 32px;
+          background-color: $color-primary;
+          mask-image: url('https://api.iconify.design/ant-design/check-square-filled.svg');
+          -webkit-mask-image: url('https://api.iconify.design/ant-design/check-square-filled.svg');
+          mask-repeat: no-repeat;
+          -webkit-mask-repeat: no-repeat;
+          mask-size: 32px;
+          -webkit-mask-size: 32px;
+        }
+      }
+    }
+
+    &[type='file'] {
+      border: none;
+      transform: translateY(8px);
+    }
 
     &[type='submit'],
     &[type='button'] {
@@ -64,13 +136,38 @@ html[data-sigaa-extension-active='true'] {
     }
   }
 
+  ::-webkit-file-upload-button {
+    background: $color-primary-opac-10;
+    color: $color-text;
+    padding: 12px;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+      background: $color-primary;
+    }
+  }
+
   select {
     min-width: 32px;
     max-width: 90%;
     height: 32px;
     border: none;
     background: $color-primary-opac-10;
-    cursor: pointer;
+    transition: background 0.5s ease;
+
+    &:focus-visible {
+      outline-color: $color-primary;
+    }
+
+    &#formAva\:possuiNota {
+      margin-left: 6px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      outline: 2px solid $color-primary;
+    }
   }
 
   body #cabecalho {
@@ -192,6 +289,47 @@ html[data-sigaa-extension-active='true'] {
   #menuTurmaVirtual {
     float: right;
     position: relative;
+
+    #formAcoesTurma button.ui-button-icon-only.ui-state-default {
+      &:hover {
+        span.ui-icon {
+          background-color: $color-text;
+        }
+      }
+      span.ui-icon {
+        &.botaoPortal,
+        &.botaoImprimir,
+        &.botaoAulasPaginadas,
+        &.botaoTrocarTurma,
+        &.botaoOpcoesTurma,
+        &.botaoAtivarEdicao {
+          background-image: none;
+          background-color: $color-accent;
+
+          &:hover {
+            background-color: $color-text;
+          }
+        }
+        &.botaoPortal {
+          mask-image: url('https://api.iconify.design/clarity/home-solid.svg');
+        }
+        &.botaoImprimir {
+          mask-image: url('https://api.iconify.design/fluent/print-24-filled.svg');
+        }
+        &.botaoAulasPaginadas {
+          mask-image: url('https://api.iconify.design/heroicons-outline/switch-horizontal.svg');
+        }
+        &.botaoTrocarTurma {
+          mask-image: url('https://api.iconify.design/akar-icons/arrow-back-thick-fill.svg');
+        }
+        &.botaoOpcoesTurma {
+          mask-image: url('https://api.iconify.design/ci/settings-filled.svg');
+        }
+        &.botaoAtivarEdicao {
+          mask-image: url('https://api.iconify.design/clarity/edit-solid.svg');
+        }
+      }
+    }
   }
 
   // painel lateral esquerdo
@@ -305,5 +443,74 @@ html[data-sigaa-extension-active='true'] {
       font-size: 0.8rem !important;
       line-height: 1rem !important;
     }
+  }
+
+  .required-items {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .required,
+  .obrigatorio {
+    background-image: none;
+    position: relative;
+
+    span#labelNotaMaximaUnidade {
+      display: block;
+    }
+
+    &:before {
+      content: '';
+      width: 32px;
+      height: 32px;
+      background-color: $color-alert;
+      display: inline-block;
+      position: absolute;
+      right: -8px;
+      width: 14px;
+      height: 14px;
+      transform: scale(0.8);
+
+      mask-image: url('https://api.iconify.design/ant-design/star-filled.svg');
+      mask-repeat: no-repeat;
+      mask-position: right;
+      -webkit-mask-image: url('https://api.iconify.design/ant-design/star-filled.svg');
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: right top;
+    }
+  }
+
+  .botoes .other-actions {
+    display: flex;
+    transform: translateX(-100%);
+  }
+
+  // calendario
+  #formAva\:dataInicioDispArquivoSpan_calendarDivm,
+  .jscalendar-DB-div-style {
+    left: 32px !important;
+    top: -24px !important;
+
+    .jscalendar-DB-title-background-style {
+      background-color: $color-primary-opac-10;
+    }
+    .jscalendar-DB-body-style {
+      td {
+        padding: 0;
+      }
+    }
+    .jscalendar-DB-normal-day-style {
+      padding: 4px;
+    }
+  }
+
+  #formAva\:dataInicioDispArquivoSpan_selectYearDiv {
+    left: 182px !important;
+    top: 8px !important;
+  }
+  #formAva\:dataInicioDispArquivoSpan_selectMonthDiv {
+    left: 107px !important;
+    top: 8px !important;
   }
 }

@@ -17,7 +17,24 @@ chrome.runtime.onMessage.addListener (function (request, sender, sendResponse) {
   }
 });
 
+async function injectScripts () {
+  // "web_accessible_resources": [
+  //   {
+  //     "resources": ["https://code.iconify.design/2/2.1.2/iconify.min.js"],
+  //     "matches": ["https://sig.ifsudestemg.edu.br/sigaa/*"]
+  //   }
+  // ],
+  const script = document.createElement ('script');
+  script.src = chrome.extension.getURL (
+    'https://code.iconify.design/2/2.1.2/iconify.min.js'
+  );
+  (document.body || document.head || document.documentElement)
+    .appendChild (script);
+}
+
 function start () {
+  // injectScripts ();
+
   chrome.runtime.sendMessage ({
     action: 'updateIcon',
     value: true,

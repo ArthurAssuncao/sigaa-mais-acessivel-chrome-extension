@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "SIGAA mais acessível",
-  "version": "0.1",
+  "version": "0.3",
   "description": "Torne o sistema SIGAA mais acessível",
   "icons": {
     "16": "img/logo-16.png",
