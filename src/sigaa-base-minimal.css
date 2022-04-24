@@ -1,0 +1,398 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c4d2eb;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #111;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+h4, h5, h6 {
+  font-size: 0.9rem !important;
+}
+
+small {
+  font-size: 0.8rem;
+}
+
+input {
+  transition: background 0.5s ease;
+}
+
+input:hover {
+  outline-color: #24aeff;
+}
+
+input:focus-visible {
+  outline-color: #24aeff;
+}
+
+input[type='file'] {
+  min-height: 48px;
+  border: none;
+  transform: translateY(8px);
+}
+
+input[type='submit'], input[type='button'] {
+  min-height: 48px;
+  min-width: 140px;
+  border: none;
+  transition: background-color 0.5s ease;
+  font-size: 1.05rem;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+input[type='submit']:hover, input[type='button']:hover {
+  background-color: #24aeff;
+  cursor: pointer;
+}
+
+::-webkit-file-upload-button {
+  background: rgba(36, 174, 255, 0.1);
+  color: #111;
+  padding: 12px;
+  border: none;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+::-webkit-file-upload-button:hover {
+  cursor: pointer;
+  background: #24aeff;
+}
+
+.ui-layout-resizer.ui-layout-resizer-south.ui-layout-resizer-open.ui-layout-resizer-south-open {
+  bottom: 32px !important;
+}
+
+#menu-dropdown .wrapper table.ThemeOfficeMenu tbody tr td.ThemeOfficeMainItem,
+#menu-dropdown .wrapper table.ThemeOfficeMenu tbody tr td.ThemeOfficeMainItemHover {
+  padding: 8px 4px;
+  transition: background 0.5s ease;
+}
+
+#menu-dropdown .wrapper table.ThemeOfficeMenu tbody tr td.ThemeOfficeMainItem:hover,
+#menu-dropdown .wrapper table.ThemeOfficeMenu tbody tr td.ThemeOfficeMainItemHover:hover {
+  cursor: pointer;
+}
+
+#menu-dropdown
+.wrapper
+div.ThemeOfficeSubMenu
+table.ThemeOfficeSubMenuTable
+tbody tr.ThemeOfficeMenuItem,
+#menu-dropdown
+.wrapper
+div.ThemeOfficeSubMenu
+table.ThemeOfficeSubMenuTable
+tbody tr.ThemeOfficeMenuItemHover {
+  transition: background 0.5s ease;
+}
+
+#menu-dropdown
+.wrapper
+div.ThemeOfficeSubMenu
+table.ThemeOfficeSubMenuTable
+tbody tr.ThemeOfficeMenuItem td,
+#menu-dropdown
+.wrapper
+div.ThemeOfficeSubMenu
+table.ThemeOfficeSubMenuTable
+tbody tr.ThemeOfficeMenuItemHover td {
+  padding: 8px 4px;
+}
+
+#menu-dropdown
+.wrapper
+div.ThemeOfficeSubMenu
+table.ThemeOfficeSubMenuTable
+tbody tr.ThemeOfficeMenuItem td:hover,
+#menu-dropdown
+.wrapper
+div.ThemeOfficeSubMenu
+table.ThemeOfficeSubMenuTable
+tbody tr.ThemeOfficeMenuItemHover td:hover {
+  cursor: pointer;
+}
+
+.ui-button {
+  min-height: 32px;
+  min-width: 32px;
+}
+
+#auxEsconderSubMenu {
+  display: none;
+}
+
+#menuTurmaVirtual {
+  float: right;
+  position: relative;
+}
+
+#menuTurmaVirtual #formAcoesTurma button.ui-button#formAcoesTurma\:botaoTrocarTurma {
+  color: #111;
+  top: 1px;
+}
+
+#menuTurmaVirtual #formAcoesTurma button.ui-button#formAcoesTurma\:botaoTrocarTurma .botaoTrocarTurma {
+  background-image: none;
+  background-color: #111;
+  -webkit-mask-image: url("https://api.iconify.design/akar-icons/arrow-back-thick-fill.svg");
+          mask-image: url("https://api.iconify.design/akar-icons/arrow-back-thick-fill.svg");
+  transform: scale(0.8);
+}
+
+#menuTurmaVirtual #formAcoesTurma button.ui-button#formAcoesTurma\:botaoTrocarTurma .ui-button-text {
+  line-height: initial;
+}
+
+#menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default:hover span.ui-icon {
+  background-color: #111;
+}
+
+#menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoPortal, #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoImprimir, #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAulasPaginadas, #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoTrocarTurma, #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoOpcoesTurma, #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAtivarEdicao {
+  background-image: none;
+  background-color: #111;
+}
+
+#menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoPortal:hover, #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoImprimir:hover, #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAulasPaginadas:hover, #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoTrocarTurma:hover, #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoOpcoesTurma:hover, #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAtivarEdicao:hover {
+  background-color: #111;
+}
+
+#menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoPortal {
+  -webkit-mask-image: url("https://api.iconify.design/clarity/home-solid.svg");
+          mask-image: url("https://api.iconify.design/clarity/home-solid.svg");
+}
+
+#menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoImprimir {
+  -webkit-mask-image: url("https://api.iconify.design/fluent/print-24-filled.svg");
+          mask-image: url("https://api.iconify.design/fluent/print-24-filled.svg");
+}
+
+#menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAulasPaginadas {
+  -webkit-mask-image: url("https://api.iconify.design/heroicons-outline/switch-horizontal.svg");
+          mask-image: url("https://api.iconify.design/heroicons-outline/switch-horizontal.svg");
+}
+
+#menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoTrocarTurma {
+  -webkit-mask-image: url("https://api.iconify.design/akar-icons/arrow-back-thick-fill.svg");
+          mask-image: url("https://api.iconify.design/akar-icons/arrow-back-thick-fill.svg");
+}
+
+#menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoOpcoesTurma {
+  -webkit-mask-image: url("https://api.iconify.design/ci/settings-filled.svg");
+          mask-image: url("https://api.iconify.design/ci/settings-filled.svg");
+}
+
+#menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAtivarEdicao {
+  -webkit-mask-image: url("https://api.iconify.design/clarity/edit-solid.svg");
+          mask-image: url("https://api.iconify.design/clarity/edit-solid.svg");
+}
+
+#barraEsquerda,
+#barraDireita {
+  top: 76px;
+}
+
+.ui-layout-pane:not(.ui-layout-center) td:first-of-type,
+#barraEsquerda td:first-of-type {
+  color: #111 !important;
+}
+
+.ui-layout-pane:not(.ui-layout-center) table tbody tr td,
+#barraEsquerda table tbody tr td {
+  color: #111;
+  min-height: 32px;
+  height: 32px !important;
+  background: linear-gradient(180deg, #d5e4f5 0%, #aec9ec 50%, #d5e4f5 100%) !important;
+}
+
+.ui-layout-pane:not(.ui-layout-center) .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-header-act,
+.ui-layout-pane:not(.ui-layout-center) .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-header,
+#barraEsquerda .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-header-act,
+#barraEsquerda .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-header {
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+  background-position-x: 6px;
+  text-indent: 24px;
+}
+
+.ui-layout-pane:not(.ui-layout-center) .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-content-exterior table tbody tr .rich-panelbar-content a div,
+#barraEsquerda .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-content-exterior table tbody tr .rich-panelbar-content a div {
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 2px;
+  text-indent: 0px;
+  padding-left: 16px;
+  min-height: 32px;
+  height: 32px;
+  transition: background 0.5s ease;
+}
+
+.ui-layout-pane:not(.ui-layout-center) .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-content-exterior table tbody tr .rich-panelbar-content a div img,
+#barraEsquerda .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-content-exterior table tbody tr .rich-panelbar-content a div img {
+  margin-left: 0px !important;
+  margin-right: 6px;
+}
+
+.rich-stglpanel-header.headerBloco {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  color: #111;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  min-height: 32px;
+  height: 32px !important;
+  background: linear-gradient(180deg, #d5e4f5 0%, #aec9ec 50%, #d5e4f5 100%) !important;
+}
+
+.rich-stglpanel-body .progress .progress-bar {
+  background: linear-gradient(45deg, #d5e4f5 0%, #aec9ec 50%, #d5e4f5 100%);
+  color: #111;
+}
+
+#conteudo {
+  inset-block-start: 76px;
+}
+
+body #cabecalho {
+  min-height: 76px;
+  background-color: #c4d2eb;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+body #cabecalho.ui-layout-north {
+  min-height: 80px;
+}
+
+body #cabecalho #info-sistema {
+  width: 100%;
+  min-height: 35px;
+  display: flex;
+  align-items: center;
+}
+
+body #cabecalho #info-sistema a:hover {
+  color: #fff !important;
+}
+
+body #cabecalho #info-sistema div.dir {
+  top: 0;
+  display: flex;
+  min-height: 32px;
+  align-items: center;
+}
+
+body #cabecalho #info-sistema div.dir #relogioAva {
+  padding: 0 5px;
+}
+
+body #cabecalho #info-sistema div.dir .ajuda-link {
+  padding-right: 282px !important;
+}
+
+body #cabecalho #info-sistema div.dir span.acessibilidade,
+body #cabecalho #info-sistema div.dir span.sair-sistema {
+  display: flex;
+  align-items: center;
+  border-color: #c4d2eb;
+  min-height: 32px;
+}
+
+body #cabecalho #info-sistema div.dir span.acessibilidade a,
+body #cabecalho #info-sistema div.dir span.sair-sistema a {
+  min-height: 32px;
+  font-size: 1.2em;
+  padding: 5px;
+}
+
+body #cabecalho #info-sistema div.dir span.acessibilidade a:hover,
+body #cabecalho #info-sistema div.dir span.sair-sistema a:hover {
+  background-color: rgba(36, 174, 255, 0.1);
+}
+
+body #cabecalho #info-sistema div.dir span.acessibilidade {
+  display: flex;
+  flex-direction: row;
+}
+
+body #cabecalho #info-sistema div.dir #tempoSessao {
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+  font-size: 1.1em;
+  margin-left: 8px;
+}
+
+body #cabecalho #painelDadosUsuario {
+  margin-top: 5px !important;
+}
+
+body #cabecalho #painelDadosUsuario p {
+  font-size: 0.8rem !important;
+}
+
+body #cabecalho #painelDadosUsuario p a {
+  font-size: 0.7rem !important;
+}
+
+body #cabecalho #painelDadosUsuario div {
+  font-size: 0.7rem !important;
+}
+
+body #cabecalho #painel-usuario #menu-usuario ul li {
+  border: 2px solid transparent;
+  transition: all 0.5s ease;
+  margin: 0;
+}
+
+body #cabecalho #painel-usuario #menu-usuario ul li:hover {
+  border-color: #15428b;
+}
+
+body #cabecalho #painel-usuario #menu-usuario ul li a#show-modulos,
+body #cabecalho #painel-usuario #menu-usuario ul li a {
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+  background-position: 5px 8px;
+  transition: all 0.5s ease;
+}
+
+body #rodape {
+  min-height: 32px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}

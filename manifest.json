@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "SIGAA mais acessível",
-  "version": "0.3",
+  "version": "0.5",
   "description": "Torne o sistema SIGAA mais acessível",
   "icons": {
     "16": "img/logo-16.png",
@@ -23,12 +23,44 @@
   "background": {
     "service_worker": "src/background.js"
   },
-  "host_permissions": ["https://sig.ifsudestemg.edu.br/sigaa/"],
   "content_scripts": [
     {
       "matches": ["https://sig.ifsudestemg.edu.br/sigaa/*"],
-      "css": ["src/sigaa.css"],
+      "css": ["src/sigaa-base-minimal.css"]
+    },
+    {
+      "matches": ["https://sig.ifsudestemg.edu.br/sigaa/*"],
       "js": ["src/sigaa.js"]
+    },
+    {
+      "matches": [
+        "https://sig.ifsudestemg.edu.br/sigaa/verTelaLogin.do",
+        "https://sig.ifsudestemg.edu.br/sigaa/logar.do*"
+      ],
+      "css": ["src/sigaa-base.css", "src/sigaa-tela-login.css"]
+    },
+    {
+      "matches": ["https://sig.ifsudestemg.edu.br/sigaa/vinculos.jsf"],
+      "css": ["src/sigaa-base.css", "src/sigaa-tela-vinculos.css"]
+    },
+    {
+      "matches": ["https://sig.ifsudestemg.edu.br/sigaa/verMenuPrincipal.do"],
+      "css": ["src/sigaa-base.css", "src/sigaa-tela-menu-principal.css"]
+    },
+    {
+      "matches": [
+        "https://sig.ifsudestemg.edu.br/sigaa/portais/docente/docente.jsf"
+      ],
+      "css": ["src/sigaa-base.css", "src/sigaa-tela-docente.css"]
+    },
+    {
+      "matches": [
+        "https://sig.ifsudestemg.edu.br/sigaa/portais/discente/*",
+        "https://sig.ifsudestemg.edu.br/sigaa/portais/discente/discente.jsf",
+        "https://sig.ifsudestemg.edu.br/sigaa/ava/index.jsf",
+        "https://sig.ifsudestemg.edu.br/sigaa/ava/participantes.jsf"
+      ],
+      "css": ["src/sigaa-base.css", "src/sigaa-tela-discente.css"]
     }
   ],
   "permissions": ["tabs", "storage"]

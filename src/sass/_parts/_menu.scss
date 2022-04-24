@@ -1,0 +1,189 @@
+#menu-dropdown .wrapper table.ThemeOfficeMenu tbody tr {
+  td.ThemeOfficeMainItem,
+  td.ThemeOfficeMainItemHover {
+    padding: 8px 4px;
+    transition: background 0.5s ease;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+#menu-dropdown
+  .wrapper
+  div.ThemeOfficeSubMenu
+  table.ThemeOfficeSubMenuTable
+  tbody {
+  tr.ThemeOfficeMenuItem,
+  tr.ThemeOfficeMenuItemHover {
+    transition: background 0.5s ease;
+
+    td {
+      padding: 8px 4px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+
+.ui-button {
+  min-height: 32px;
+  min-width: 32px;
+}
+
+#auxEsconderSubMenu {
+  display: none;
+}
+
+#menuTurmaVirtual {
+  float: right;
+  position: relative;
+
+  #formAcoesTurma button.ui-button {
+    &#formAcoesTurma\:botaoTrocarTurma {
+      color: $color-text;
+      top: 1px;
+
+      .botaoTrocarTurma {
+        background-image: none;
+        background-color: $color-text;
+        mask-image: url('https://api.iconify.design/akar-icons/arrow-back-thick-fill.svg');
+        transform: scale(0.8);
+      }
+
+      .ui-button-text {
+        line-height: initial;
+      }
+    }
+  }
+
+  #formAcoesTurma button.ui-button-icon-only.ui-state-default {
+    &:hover {
+      span.ui-icon {
+        background-color: $color-text;
+      }
+    }
+
+    span.ui-icon {
+      &.botaoPortal,
+      &.botaoImprimir,
+      &.botaoAulasPaginadas,
+      &.botaoTrocarTurma,
+      &.botaoOpcoesTurma,
+      &.botaoAtivarEdicao {
+        background-image: none;
+        background-color: $color-text;
+
+        &:hover {
+          background-color: $color-text;
+        }
+      }
+      &.botaoPortal {
+        mask-image: url('https://api.iconify.design/clarity/home-solid.svg');
+      }
+      &.botaoImprimir {
+        mask-image: url('https://api.iconify.design/fluent/print-24-filled.svg');
+      }
+      &.botaoAulasPaginadas {
+        mask-image: url('https://api.iconify.design/heroicons-outline/switch-horizontal.svg');
+      }
+      &.botaoTrocarTurma {
+        mask-image: url('https://api.iconify.design/akar-icons/arrow-back-thick-fill.svg');
+      }
+      &.botaoOpcoesTurma {
+        mask-image: url('https://api.iconify.design/ci/settings-filled.svg');
+      }
+      &.botaoAtivarEdicao {
+        mask-image: url('https://api.iconify.design/clarity/edit-solid.svg');
+      }
+    }
+  }
+}
+
+#barraEsquerda,
+#barraDireita {
+  top: 76px;
+}
+
+// painel lateral esquerdo
+$size-height-painel-item: 32px;
+.ui-layout-pane:not(.ui-layout-center),
+#barraEsquerda {
+  td:first-of-type {
+    color: $color-text !important;
+  }
+  table tbody tr td {
+    color: $color-text;
+    min-height: $size-height-painel-item;
+    height: $size-height-painel-item !important;
+    background: $color-blue-gradient !important;
+  }
+
+  .rich-panelbar.rich-panelbar-b {
+    .rich-panelbar.rich-panelbar-interior {
+      .rich-panelbar-header-act,
+      .rich-panelbar-header {
+        display: flex;
+        align-items: center;
+        min-height: $size-height-painel-item;
+        background-position-x: 6px;
+        text-indent: 24px;
+      }
+      .rich-panelbar-content-exterior {
+        table tbody tr {
+          .rich-panelbar-content a div {
+            display: flex;
+            align-items: center;
+            padding-top: 0;
+            padding-bottom: 2px;
+            text-indent: 0px;
+            padding-left: 16px;
+
+            min-height: $size-height-painel-item;
+            height: $size-height-painel-item;
+
+            transition: background 0.5s ease;
+
+            img {
+              margin-left: 0px !important;
+              margin-right: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// menu direito
+.rich-stglpanel-header.headerBloco {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+
+  color: $color-text;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  min-height: $size-height-painel-item;
+  height: $size-height-painel-item !important;
+  background: $color-blue-gradient !important;
+}
+
+.rich-stglpanel-body {
+  .progress {
+    .progress-bar {
+      background: $color-blue-gradient-45deg;
+      color: $color-text;
+    }
+  }
+}
+
+#conteudo {
+  // inset: 124px 230px 37px 0px;
+  inset-block-start: 76px;
+}

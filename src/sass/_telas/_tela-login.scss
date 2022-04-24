@@ -1,0 +1,23 @@
+@import '../_parts/_colors.scss';
+
+.painel{
+  border: 2px solid transparent;
+  transition: all 0.5s ease;
+  &:hover{
+    border-color: $color-accent;
+  }
+}
+
+a[href="/sigaa/public/cadastro/familiares.jsf"], a[href="/sigaa/public/cadastro/discente.jsf"], a[href="/admin/auto_cadastro/form.jsf?origem=2"] {
+  display: inline-block;
+  align-items: center;
+  min-height: 32px;
+  transition: all 0.5s ease;
+  background-color: $color-primary-opac-10;
+  padding: 0.5rem 1rem;
+  margin: 0.2rem;
+  border: 2px solid transparent;
+  &:hover{
+    border-color: $color-accent;
+  }
+}

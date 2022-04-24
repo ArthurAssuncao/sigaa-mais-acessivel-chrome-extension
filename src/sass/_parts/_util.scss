@@ -1,0 +1,35 @@
+.required-items {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.required,
+.obrigatorio {
+  background-image: none;
+  position: relative;
+
+  span#labelNotaMaximaUnidade {
+    display: block;
+  }
+
+  &:before {
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-color: $color-alert;
+    display: inline-block;
+    position: absolute;
+    right: -8px;
+    width: 14px;
+    height: 14px;
+    transform: scale(0.8);
+
+    mask-image: url('https://api.iconify.design/ant-design/star-filled.svg');
+    mask-repeat: no-repeat;
+    mask-position: right;
+    -webkit-mask-image: url('https://api.iconify.design/ant-design/star-filled.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: right top;
+  }
+}

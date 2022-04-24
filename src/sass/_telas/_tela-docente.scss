@@ -1,0 +1,16 @@
+@import '../_parts/_colors.scss';
+
+@import '../_parts/menu';
+
+@import '../_parts/structure';
+
+@import '../_parts/main';
+
+body #cabecalho.ui-layout-north {
+  min-height: 76px;
+}
+
+#conteudo {
+  // inset: 124px 230px 37px 0px;
+  inset-block-start: 76px;
+}

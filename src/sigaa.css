@@ -1,73 +1,141 @@
-html[data-sigaa-extension-active='true'] {
+html:not([data-sigaa-extension-active='false']) {
   /* width */
   /* Track */
   /* Handle */
   /* Handle on hover */
 }
 
-html[data-sigaa-extension-active='true'] ::-webkit-scrollbar {
+html:not([data-sigaa-extension-active='false']) ::-webkit-scrollbar {
   width: 10px;
 }
 
-html[data-sigaa-extension-active='true'] ::-webkit-scrollbar-track {
+html:not([data-sigaa-extension-active='false']) ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
-html[data-sigaa-extension-active='true'] ::-webkit-scrollbar-thumb {
+html:not([data-sigaa-extension-active='false']) ::-webkit-scrollbar-thumb {
   background: #c4d2eb;
   -webkit-transition: background 0.5s ease;
   transition: background 0.5s ease;
 }
 
-html[data-sigaa-extension-active='true'] ::-webkit-scrollbar-thumb:hover {
-  background: #15428b;
+html:not([data-sigaa-extension-active='false']) ::-webkit-scrollbar-thumb:hover {
+  background: #111;
 }
 
-html[data-sigaa-extension-active='true'] body {
+html:not([data-sigaa-extension-active='false']) body {
   background-color: #fafafa;
 }
 
-html[data-sigaa-extension-active='true'] body {
+html:not([data-sigaa-extension-active='false']) body {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
 }
 
-html[data-sigaa-extension-active='true'] input {
+html:not([data-sigaa-extension-active='false']) h4, html:not([data-sigaa-extension-active='false']) h5, html:not([data-sigaa-extension-active='false']) h6 {
+  font-size: 0.9rem !important;
+}
+
+html:not([data-sigaa-extension-active='false']) small {
+  font-size: 0.8rem;
+}
+
+html:not([data-sigaa-extension-active='false']) input {
+  transition: background 0.5s ease;
+}
+
+html:not([data-sigaa-extension-active='false']) input:hover {
+  outline-color: #24aeff;
+}
+
+html:not([data-sigaa-extension-active='false']) input:focus-visible {
+  outline-color: #24aeff;
+}
+
+html:not([data-sigaa-extension-active='false']) input[type='file'] {
+  min-height: 48px;
+  border: none;
+  transform: translateY(8px);
+}
+
+html:not([data-sigaa-extension-active='false']) input[type='submit'], html:not([data-sigaa-extension-active='false']) input[type='button'] {
+  min-height: 48px;
+  min-width: 140px;
+  border: none;
+  transition: background-color 0.5s ease;
+  font-size: 1.05rem;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+html:not([data-sigaa-extension-active='false']) input[type='submit']:hover, html:not([data-sigaa-extension-active='false']) input[type='button']:hover {
+  background-color: #24aeff;
+  cursor: pointer;
+}
+
+html:not([data-sigaa-extension-active='false']) ::-webkit-file-upload-button {
+  background: rgba(36, 174, 255, 0.1);
+  color: #111;
+  padding: 12px;
+  border: none;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+html:not([data-sigaa-extension-active='false']) ::-webkit-file-upload-button:hover {
+  cursor: pointer;
+  background: #24aeff;
+}
+
+html:not([data-sigaa-extension-active='false']) * {
+  box-sizing: border-box;
+}
+
+html:not([data-sigaa-extension-active='false']) a {
+  line-height: 1.2rem;
+}
+
+html:not([data-sigaa-extension-active='false']) a:hover {
+  color: #111 !important;
+  text-decoration: underline;
+}
+
+html:not([data-sigaa-extension-active='false']) input {
   min-height: 48px;
   transition: background 0.5s ease;
 }
 
-html[data-sigaa-extension-active='true'] input:hover {
+html:not([data-sigaa-extension-active='false']) input:hover {
   outline-color: #24aeff;
 }
 
-html[data-sigaa-extension-active='true'] input:focus-visible {
+html:not([data-sigaa-extension-active='false']) input:focus-visible {
   outline-color: #24aeff;
 }
 
-html[data-sigaa-extension-active='true'] input[type='checkbox'] {
+html:not([data-sigaa-extension-active='false']) input[type='checkbox'] {
   visibility: hidden;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   transform: translateY(8px);
   transition: background 0.5s ease;
 }
 
-html[data-sigaa-extension-active='true'] input[type='checkbox']:hover {
+html:not([data-sigaa-extension-active='false']) input[type='checkbox']:hover {
   cursor: pointer;
 }
 
-html[data-sigaa-extension-active='true'] input[type='checkbox']:hover:before {
+html:not([data-sigaa-extension-active='false']) input[type='checkbox']:hover:before {
   background-color: #ccc;
 }
 
-html[data-sigaa-extension-active='true'] input[type='checkbox']:hover:checked:before {
+html:not([data-sigaa-extension-active='false']) input[type='checkbox']:hover:checked:before {
   background-color: #15428b;
 }
 
-html[data-sigaa-extension-active='true'] input[type='checkbox']:before {
+html:not([data-sigaa-extension-active='false']) input[type='checkbox']:before {
   content: '';
   height: 26px;
   width: 26px;
@@ -80,11 +148,11 @@ html[data-sigaa-extension-active='true'] input[type='checkbox']:before {
   transition: background 0.5s ease;
 }
 
-html[data-sigaa-extension-active='true'] input[type='checkbox']:before:hover {
+html:not([data-sigaa-extension-active='false']) input[type='checkbox']:before:hover {
   background-color: #ccc;
 }
 
-html[data-sigaa-extension-active='true'] input[type='checkbox']:checked:before {
+html:not([data-sigaa-extension-active='false']) input[type='checkbox']:checked:before {
   height: 32px;
   width: 32px;
   min-height: 32px;
@@ -98,16 +166,16 @@ html[data-sigaa-extension-active='true'] input[type='checkbox']:checked:before {
   -webkit-mask-size: 32px;
 }
 
-html[data-sigaa-extension-active='true'] input[type='checkbox']:checked:before:hover {
+html:not([data-sigaa-extension-active='false']) input[type='checkbox']:checked:before:hover {
   background-color: #15428b;
 }
 
-html[data-sigaa-extension-active='true'] input[type='file'] {
+html:not([data-sigaa-extension-active='false']) input[type='file'] {
   border: none;
   transform: translateY(8px);
 }
 
-html[data-sigaa-extension-active='true'] input[type='submit'], html[data-sigaa-extension-active='true'] input[type='button'] {
+html:not([data-sigaa-extension-active='false']) input[type='submit'], html:not([data-sigaa-extension-active='false']) input[type='button'] {
   min-width: 140px;
   border: none;
   transition: background-color 0.5s ease;
@@ -116,12 +184,12 @@ html[data-sigaa-extension-active='true'] input[type='submit'], html[data-sigaa-e
   box-sizing: border-box;
 }
 
-html[data-sigaa-extension-active='true'] input[type='submit']:hover, html[data-sigaa-extension-active='true'] input[type='button']:hover {
+html:not([data-sigaa-extension-active='false']) input[type='submit']:hover, html:not([data-sigaa-extension-active='false']) input[type='button']:hover {
   background-color: #24aeff;
   cursor: pointer;
 }
 
-html[data-sigaa-extension-active='true'] input[type='password'], html[data-sigaa-extension-active='true'] input[type='text'] {
+html:not([data-sigaa-extension-active='false']) input[type='password'], html:not([data-sigaa-extension-active='false']) input[type='text'] {
   min-width: 240px;
   padding-left: 8px;
   border-color: transparent;
@@ -129,23 +197,23 @@ html[data-sigaa-extension-active='true'] input[type='password'], html[data-sigaa
   background: rgba(36, 174, 255, 0.1);
 }
 
-html[data-sigaa-extension-active='true'] input[type='password']:focus, html[data-sigaa-extension-active='true'] input[type='text']:focus {
+html:not([data-sigaa-extension-active='false']) input[type='password']:focus, html:not([data-sigaa-extension-active='false']) input[type='text']:focus {
   outline-color: #24aeff;
 }
 
-html[data-sigaa-extension-active='true'] ::-webkit-file-upload-button {
+html:not([data-sigaa-extension-active='false']) ::-webkit-file-upload-button {
   background: rgba(36, 174, 255, 0.1);
   color: #111;
   padding: 12px;
   border: none;
 }
 
-html[data-sigaa-extension-active='true'] ::-webkit-file-upload-button:hover {
+html:not([data-sigaa-extension-active='false']) ::-webkit-file-upload-button:hover {
   cursor: pointer;
   background: #24aeff;
 }
 
-html[data-sigaa-extension-active='true'] select {
+html:not([data-sigaa-extension-active='false']) select {
   min-width: 32px;
   max-width: 90%;
   height: 32px;
@@ -154,20 +222,24 @@ html[data-sigaa-extension-active='true'] select {
   transition: background 0.5s ease;
 }
 
-html[data-sigaa-extension-active='true'] select:focus-visible {
+html:not([data-sigaa-extension-active='false']) select:focus-visible {
   outline-color: #24aeff;
 }
 
-html[data-sigaa-extension-active='true'] select#formAva\:possuiNota {
+html:not([data-sigaa-extension-active='false']) select#formAva\:possuiNota {
   margin-left: 6px;
 }
 
-html[data-sigaa-extension-active='true'] select:hover {
+html:not([data-sigaa-extension-active='false']) select:hover {
   cursor: pointer;
   outline: 2px solid #24aeff;
 }
 
-html[data-sigaa-extension-active='true'] body #cabecalho {
+html:not([data-sigaa-extension-active='false']) .ui-layout-resizer.ui-layout-resizer-south.ui-layout-resizer-open.ui-layout-resizer-south-open {
+  bottom: 32px !important;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho {
   min-height: 76px;
   background-color: #c4d2eb;
   display: flex;
@@ -176,76 +248,128 @@ html[data-sigaa-extension-active='true'] body #cabecalho {
   justify-content: center;
 }
 
-html[data-sigaa-extension-active='true'] body #cabecalho #info-sistema {
+html:not([data-sigaa-extension-active='false']) body #cabecalho.ui-layout-north {
+  min-height: 80px;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #info-sistema {
   width: 100%;
-  min-height: 32px;
+  min-height: 35px;
   display: flex;
   align-items: center;
 }
 
-html[data-sigaa-extension-active='true'] body #cabecalho #info-sistema div.dir {
+html:not([data-sigaa-extension-active='false']) body #cabecalho #info-sistema a:hover {
+  color: #fff !important;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #info-sistema div.dir {
+  top: 0;
   display: flex;
   min-height: 32px;
   align-items: center;
 }
 
-html[data-sigaa-extension-active='true'] body #cabecalho #info-sistema div.dir span.acessibilidade a,
-html[data-sigaa-extension-active='true'] body #cabecalho #info-sistema div.dir span.sair-sistema a {
+html:not([data-sigaa-extension-active='false']) body #cabecalho #info-sistema div.dir #relogioAva {
+  padding: 0 5px;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #info-sistema div.dir .ajuda-link {
+  padding-right: 282px !important;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #info-sistema div.dir span.acessibilidade,
+html:not([data-sigaa-extension-active='false']) body #cabecalho #info-sistema div.dir span.sair-sistema {
+  display: flex;
+  align-items: center;
+  border-color: #c4d2eb;
+  min-height: 32px;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #info-sistema div.dir span.acessibilidade a,
+html:not([data-sigaa-extension-active='false']) body #cabecalho #info-sistema div.dir span.sair-sistema a {
+  min-height: 32px;
   font-size: 1.2em;
-  padding: 8px 4px;
+  padding: 5px;
 }
 
-html[data-sigaa-extension-active='true'] body #cabecalho #info-sistema div.dir span.acessibilidade a:hover,
-html[data-sigaa-extension-active='true'] body #cabecalho #info-sistema div.dir span.sair-sistema a:hover {
+html:not([data-sigaa-extension-active='false']) body #cabecalho #info-sistema div.dir span.acessibilidade a:hover,
+html:not([data-sigaa-extension-active='false']) body #cabecalho #info-sistema div.dir span.sair-sistema a:hover {
   background-color: rgba(36, 174, 255, 0.1);
 }
 
-html[data-sigaa-extension-active='true'] body #cabecalho #info-sistema div.dir span#tempoSessao {
-  font-size: 1.1em;
+html:not([data-sigaa-extension-active='false']) body #cabecalho #info-sistema div.dir span.acessibilidade {
+  display: flex;
+  flex-direction: row;
 }
 
-html[data-sigaa-extension-active='true'] body #cabecalho #painelDadosUsuario {
-  margin-top: 5px !important;
-}
-
-html[data-sigaa-extension-active='true'] body #cabecalho #painelDadosUsuario p {
-  font-size: 0.8rem !important;
-}
-
-html[data-sigaa-extension-active='true'] body #cabecalho #painelDadosUsuario p a {
-  font-size: 0.7rem !important;
-}
-
-html[data-sigaa-extension-active='true'] body #cabecalho #painelDadosUsuario div {
-  font-size: 0.7rem !important;
-}
-
-html[data-sigaa-extension-active='true'] body #cabecalho #painel-usuario #menu-usuario ul li a#show-modulos,
-html[data-sigaa-extension-active='true'] body #cabecalho #painel-usuario #menu-usuario ul li a {
+html:not([data-sigaa-extension-active='false']) body #cabecalho #info-sistema div.dir #tempoSessao {
   display: flex;
   align-items: center;
   min-height: 32px;
-  background-position: 5px 12px;
+  font-size: 1.1em;
+  margin-left: 8px;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #painelDadosUsuario {
+  margin-top: 5px !important;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #painelDadosUsuario p {
+  font-size: 0.8rem !important;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #painelDadosUsuario p a {
+  font-size: 0.7rem !important;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #painelDadosUsuario div {
+  font-size: 0.7rem !important;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #painel-usuario #menu-usuario ul li {
+  border: 2px solid transparent;
+  transition: all 0.5s ease;
+  margin: 0;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #painel-usuario #menu-usuario ul li:hover {
+  border-color: #15428b;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #painel-usuario #menu-usuario ul li a#show-modulos,
+html:not([data-sigaa-extension-active='false']) body #cabecalho #painel-usuario #menu-usuario ul li a {
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+  background-position: 5px 8px;
   transition: all 0.5s ease;
 }
 
-html[data-sigaa-extension-active='true'] #menu-dropdown .wrapper table.ThemeOfficeMenu tbody tr td.ThemeOfficeMainItem,
-html[data-sigaa-extension-active='true'] #menu-dropdown .wrapper table.ThemeOfficeMenu tbody tr td.ThemeOfficeMainItemHover {
+html:not([data-sigaa-extension-active='false']) body #rodape {
+  min-height: 32px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+html:not([data-sigaa-extension-active='false']) #menu-dropdown .wrapper table.ThemeOfficeMenu tbody tr td.ThemeOfficeMainItem,
+html:not([data-sigaa-extension-active='false']) #menu-dropdown .wrapper table.ThemeOfficeMenu tbody tr td.ThemeOfficeMainItemHover {
   padding: 8px 4px;
   transition: background 0.5s ease;
 }
 
-html[data-sigaa-extension-active='true'] #menu-dropdown .wrapper table.ThemeOfficeMenu tbody tr td.ThemeOfficeMainItem:hover,
-html[data-sigaa-extension-active='true'] #menu-dropdown .wrapper table.ThemeOfficeMenu tbody tr td.ThemeOfficeMainItemHover:hover {
+html:not([data-sigaa-extension-active='false']) #menu-dropdown .wrapper table.ThemeOfficeMenu tbody tr td.ThemeOfficeMainItem:hover,
+html:not([data-sigaa-extension-active='false']) #menu-dropdown .wrapper table.ThemeOfficeMenu tbody tr td.ThemeOfficeMainItemHover:hover {
   cursor: pointer;
 }
 
-html[data-sigaa-extension-active='true'] #menu-dropdown
+html:not([data-sigaa-extension-active='false']) #menu-dropdown
 .wrapper
 div.ThemeOfficeSubMenu
 table.ThemeOfficeSubMenuTable
 tbody tr.ThemeOfficeMenuItem,
-html[data-sigaa-extension-active='true'] #menu-dropdown
+html:not([data-sigaa-extension-active='false']) #menu-dropdown
 .wrapper
 div.ThemeOfficeSubMenu
 table.ThemeOfficeSubMenuTable
@@ -253,12 +377,12 @@ tbody tr.ThemeOfficeMenuItemHover {
   transition: background 0.5s ease;
 }
 
-html[data-sigaa-extension-active='true'] #menu-dropdown
+html:not([data-sigaa-extension-active='false']) #menu-dropdown
 .wrapper
 div.ThemeOfficeSubMenu
 table.ThemeOfficeSubMenuTable
 tbody tr.ThemeOfficeMenuItem td,
-html[data-sigaa-extension-active='true'] #menu-dropdown
+html:not([data-sigaa-extension-active='false']) #menu-dropdown
 .wrapper
 div.ThemeOfficeSubMenu
 table.ThemeOfficeSubMenuTable
@@ -266,12 +390,12 @@ tbody tr.ThemeOfficeMenuItemHover td {
   padding: 8px 4px;
 }
 
-html[data-sigaa-extension-active='true'] #menu-dropdown
+html:not([data-sigaa-extension-active='false']) #menu-dropdown
 .wrapper
 div.ThemeOfficeSubMenu
 table.ThemeOfficeSubMenuTable
 tbody tr.ThemeOfficeMenuItem td:hover,
-html[data-sigaa-extension-active='true'] #menu-dropdown
+html:not([data-sigaa-extension-active='false']) #menu-dropdown
 .wrapper
 div.ThemeOfficeSubMenu
 table.ThemeOfficeSubMenuTable
@@ -279,87 +403,102 @@ tbody tr.ThemeOfficeMenuItemHover td:hover {
   cursor: pointer;
 }
 
-html[data-sigaa-extension-active='true'] .formulario table.listagem > tbody tr:hover {
-  background-color: rgba(36, 174, 255, 0.1);
-}
-
-html[data-sigaa-extension-active='true'] .formulario table.listagem > tbody tr:hover td#tdTipo a {
-  font-weight: bold;
-}
-
-html[data-sigaa-extension-active='true'] .formulario table.listagem > tbody tr td {
-  padding: 12px 3px;
-}
-
-html[data-sigaa-extension-active='true'] .ui-button {
+html:not([data-sigaa-extension-active='false']) .ui-button {
   min-height: 32px;
   min-width: 32px;
 }
 
-html[data-sigaa-extension-active='true'] #auxEsconderSubMenu {
+html:not([data-sigaa-extension-active='false']) #auxEsconderSubMenu {
   display: none;
 }
 
-html[data-sigaa-extension-active='true'] #menuTurmaVirtual {
+html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual {
   float: right;
   position: relative;
 }
 
-html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default:hover span.ui-icon {
-  background-color: #111;
+html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button#formAcoesTurma\:botaoTrocarTurma {
+  color: #111;
+  top: 1px;
 }
 
-html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoPortal, html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoImprimir, html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAulasPaginadas, html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoTrocarTurma, html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoOpcoesTurma, html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAtivarEdicao {
+html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button#formAcoesTurma\:botaoTrocarTurma .botaoTrocarTurma {
   background-image: none;
-  background-color: #15428b;
+  background-color: #111;
+  -webkit-mask-image: url("https://api.iconify.design/akar-icons/arrow-back-thick-fill.svg");
+          mask-image: url("https://api.iconify.design/akar-icons/arrow-back-thick-fill.svg");
+  transform: scale(0.8);
 }
 
-html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoPortal:hover, html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoImprimir:hover, html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAulasPaginadas:hover, html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoTrocarTurma:hover, html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoOpcoesTurma:hover, html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAtivarEdicao:hover {
+html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button#formAcoesTurma\:botaoTrocarTurma .ui-button-text {
+  line-height: initial;
+}
+
+html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default:hover span.ui-icon {
   background-color: #111;
 }
 
-html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoPortal {
+html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoPortal, html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoImprimir, html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAulasPaginadas, html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoTrocarTurma, html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoOpcoesTurma, html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAtivarEdicao {
+  background-image: none;
+  background-color: #111;
+}
+
+html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoPortal:hover, html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoImprimir:hover, html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAulasPaginadas:hover, html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoTrocarTurma:hover, html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoOpcoesTurma:hover, html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAtivarEdicao:hover {
+  background-color: #111;
+}
+
+html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoPortal {
   -webkit-mask-image: url("https://api.iconify.design/clarity/home-solid.svg");
           mask-image: url("https://api.iconify.design/clarity/home-solid.svg");
 }
 
-html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoImprimir {
+html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoImprimir {
   -webkit-mask-image: url("https://api.iconify.design/fluent/print-24-filled.svg");
           mask-image: url("https://api.iconify.design/fluent/print-24-filled.svg");
 }
 
-html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAulasPaginadas {
+html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAulasPaginadas {
   -webkit-mask-image: url("https://api.iconify.design/heroicons-outline/switch-horizontal.svg");
           mask-image: url("https://api.iconify.design/heroicons-outline/switch-horizontal.svg");
 }
 
-html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoTrocarTurma {
+html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoTrocarTurma {
   -webkit-mask-image: url("https://api.iconify.design/akar-icons/arrow-back-thick-fill.svg");
           mask-image: url("https://api.iconify.design/akar-icons/arrow-back-thick-fill.svg");
 }
 
-html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoOpcoesTurma {
+html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoOpcoesTurma {
   -webkit-mask-image: url("https://api.iconify.design/ci/settings-filled.svg");
           mask-image: url("https://api.iconify.design/ci/settings-filled.svg");
 }
 
-html[data-sigaa-extension-active='true'] #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAtivarEdicao {
+html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAtivarEdicao {
   -webkit-mask-image: url("https://api.iconify.design/clarity/edit-solid.svg");
           mask-image: url("https://api.iconify.design/clarity/edit-solid.svg");
 }
 
-html[data-sigaa-extension-active='true'] .ui-layout-pane:not(.ui-layout-center) table tbody tr td,
-html[data-sigaa-extension-active='true'] #barraEsquerda table tbody tr td {
-  color: #15428b;
+html:not([data-sigaa-extension-active='false']) #barraEsquerda,
+html:not([data-sigaa-extension-active='false']) #barraDireita {
+  top: 76px;
+}
+
+html:not([data-sigaa-extension-active='false']) .ui-layout-pane:not(.ui-layout-center) td:first-of-type,
+html:not([data-sigaa-extension-active='false']) #barraEsquerda td:first-of-type {
+  color: #111 !important;
+}
+
+html:not([data-sigaa-extension-active='false']) .ui-layout-pane:not(.ui-layout-center) table tbody tr td,
+html:not([data-sigaa-extension-active='false']) #barraEsquerda table tbody tr td {
+  color: #111;
   min-height: 32px;
   height: 32px !important;
   background: linear-gradient(180deg, #d5e4f5 0%, #aec9ec 50%, #d5e4f5 100%) !important;
 }
 
-html[data-sigaa-extension-active='true'] .ui-layout-pane:not(.ui-layout-center) .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-header-act,
-html[data-sigaa-extension-active='true'] .ui-layout-pane:not(.ui-layout-center) .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-header,
-html[data-sigaa-extension-active='true'] #barraEsquerda .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-header-act,
-html[data-sigaa-extension-active='true'] #barraEsquerda .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-header {
+html:not([data-sigaa-extension-active='false']) .ui-layout-pane:not(.ui-layout-center) .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-header-act,
+html:not([data-sigaa-extension-active='false']) .ui-layout-pane:not(.ui-layout-center) .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-header,
+html:not([data-sigaa-extension-active='false']) #barraEsquerda .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-header-act,
+html:not([data-sigaa-extension-active='false']) #barraEsquerda .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-header {
   display: flex;
   align-items: center;
   min-height: 32px;
@@ -367,8 +506,8 @@ html[data-sigaa-extension-active='true'] #barraEsquerda .rich-panelbar.rich-pane
   text-indent: 24px;
 }
 
-html[data-sigaa-extension-active='true'] .ui-layout-pane:not(.ui-layout-center) .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-content-exterior table tbody tr .rich-panelbar-content a div,
-html[data-sigaa-extension-active='true'] #barraEsquerda .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-content-exterior table tbody tr .rich-panelbar-content a div {
+html:not([data-sigaa-extension-active='false']) .ui-layout-pane:not(.ui-layout-center) .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-content-exterior table tbody tr .rich-panelbar-content a div,
+html:not([data-sigaa-extension-active='false']) #barraEsquerda .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-content-exterior table tbody tr .rich-panelbar-content a div {
   display: flex;
   align-items: center;
   padding-top: 0;
@@ -380,42 +519,18 @@ html[data-sigaa-extension-active='true'] #barraEsquerda .rich-panelbar.rich-pane
   transition: background 0.5s ease;
 }
 
-html[data-sigaa-extension-active='true'] .ui-layout-pane:not(.ui-layout-center) .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-content-exterior table tbody tr .rich-panelbar-content a div img,
-html[data-sigaa-extension-active='true'] #barraEsquerda .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-content-exterior table tbody tr .rich-panelbar-content a div img {
+html:not([data-sigaa-extension-active='false']) .ui-layout-pane:not(.ui-layout-center) .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-content-exterior table tbody tr .rich-panelbar-content a div img,
+html:not([data-sigaa-extension-active='false']) #barraEsquerda .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-content-exterior table tbody tr .rich-panelbar-content a div img {
   margin-left: 0px !important;
   margin-right: 6px;
 }
 
-html[data-sigaa-extension-active='true'] .ui-layout-pane table:not(.jscalendar-DB-table-style) tbody tr td {
-  color: #15428b;
-  min-height: 32px;
-  height: 32px !important;
-}
-
-html[data-sigaa-extension-active='true'] .ui-layout-pane table:not(.jscalendar-DB-table-style) tbody tr td span {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  position: relative !important;
-}
-
-html[data-sigaa-extension-active='true'] .ui-layout-pane table:not(.jscalendar-DB-table-style) tbody tr td span img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  cursor: pointer;
-}
-
-html[data-sigaa-extension-active='true'] .ui-layout-pane table:not(.jscalendar-DB-table-style) tbody tr td span select {
-  min-width: 32px;
-  height: 32px;
-  cursor: pointer;
-}
-
-html[data-sigaa-extension-active='true'] .rich-stglpanel-header.headerBloco {
+html:not([data-sigaa-extension-active='false']) .rich-stglpanel-header.headerBloco {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
+  color: #111;
   font-size: 0.75rem;
   padding: 2px 6px;
   min-height: 32px;
@@ -423,18 +538,47 @@ html[data-sigaa-extension-active='true'] .rich-stglpanel-header.headerBloco {
   background: linear-gradient(180deg, #d5e4f5 0%, #aec9ec 50%, #d5e4f5 100%) !important;
 }
 
-html[data-sigaa-extension-active='true'] .rich-stglpanel-body .progress .progress-bar {
+html:not([data-sigaa-extension-active='false']) .rich-stglpanel-body .progress .progress-bar {
   background: linear-gradient(45deg, #d5e4f5 0%, #aec9ec 50%, #d5e4f5 100%);
-  color: #15428b;
+  color: #111;
 }
 
-html[data-sigaa-extension-active='true'] #formAva .topico-aula .titulo {
+html:not([data-sigaa-extension-active='false']) #conteudo {
+  inset-block-start: 76px;
+}
+
+html:not([data-sigaa-extension-active='false']) .ui-layout-pane table:not(.jscalendar-DB-table-style) tbody tr td {
+  color: #111;
+  min-height: 32px;
+  height: 32px !important;
+}
+
+html:not([data-sigaa-extension-active='false']) .ui-layout-pane table:not(.jscalendar-DB-table-style) tbody tr td span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: relative !important;
+}
+
+html:not([data-sigaa-extension-active='false']) .ui-layout-pane table:not(.jscalendar-DB-table-style) tbody tr td span img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  cursor: pointer;
+}
+
+html:not([data-sigaa-extension-active='false']) .ui-layout-pane table:not(.jscalendar-DB-table-style) tbody tr td span select {
+  min-width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+html:not([data-sigaa-extension-active='false']) #formAva .topico-aula .titulo {
   background: #f0f0f0;
   padding: 10px !important;
   color: #111;
 }
 
-html[data-sigaa-extension-active='true'] #formAva .topico-aula .conteudotopico {
+html:not([data-sigaa-extension-active='false']) #formAva .topico-aula .conteudotopico {
   border: 1px solid #ccc;
   padding: 6px;
   border-top: 0;
@@ -442,25 +586,30 @@ html[data-sigaa-extension-active='true'] #formAva .topico-aula .conteudotopico {
   line-height: 1rem !important;
 }
 
-html[data-sigaa-extension-active='true'] .required-items {
+html:not([data-sigaa-extension-active='false']) .botoes .other-actions {
+  display: flex;
+  transform: translateX(-100%);
+}
+
+html:not([data-sigaa-extension-active='false']) .required-items {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-html[data-sigaa-extension-active='true'] .required,
-html[data-sigaa-extension-active='true'] .obrigatorio {
+html:not([data-sigaa-extension-active='false']) .required,
+html:not([data-sigaa-extension-active='false']) .obrigatorio {
   background-image: none;
   position: relative;
 }
 
-html[data-sigaa-extension-active='true'] .required span#labelNotaMaximaUnidade,
-html[data-sigaa-extension-active='true'] .obrigatorio span#labelNotaMaximaUnidade {
+html:not([data-sigaa-extension-active='false']) .required span#labelNotaMaximaUnidade,
+html:not([data-sigaa-extension-active='false']) .obrigatorio span#labelNotaMaximaUnidade {
   display: block;
 }
 
-html[data-sigaa-extension-active='true'] .required:before,
-html[data-sigaa-extension-active='true'] .obrigatorio:before {
+html:not([data-sigaa-extension-active='false']) .required:before,
+html:not([data-sigaa-extension-active='false']) .obrigatorio:before {
   content: '';
   width: 32px;
   height: 32px;
@@ -480,38 +629,33 @@ html[data-sigaa-extension-active='true'] .obrigatorio:before {
   -webkit-mask-position: right top;
 }
 
-html[data-sigaa-extension-active='true'] .botoes .other-actions {
-  display: flex;
-  transform: translateX(-100%);
-}
-
-html[data-sigaa-extension-active='true'] #formAva\:dataInicioDispArquivoSpan_calendarDivm,
-html[data-sigaa-extension-active='true'] .jscalendar-DB-div-style {
+html:not([data-sigaa-extension-active='false']) #formAva\:dataInicioDispArquivoSpan_calendarDivm,
+html:not([data-sigaa-extension-active='false']) .jscalendar-DB-div-style {
   left: 32px !important;
   top: -24px !important;
 }
 
-html[data-sigaa-extension-active='true'] #formAva\:dataInicioDispArquivoSpan_calendarDivm .jscalendar-DB-title-background-style,
-html[data-sigaa-extension-active='true'] .jscalendar-DB-div-style .jscalendar-DB-title-background-style {
+html:not([data-sigaa-extension-active='false']) #formAva\:dataInicioDispArquivoSpan_calendarDivm .jscalendar-DB-title-background-style,
+html:not([data-sigaa-extension-active='false']) .jscalendar-DB-div-style .jscalendar-DB-title-background-style {
   background-color: rgba(36, 174, 255, 0.1);
 }
 
-html[data-sigaa-extension-active='true'] #formAva\:dataInicioDispArquivoSpan_calendarDivm .jscalendar-DB-body-style td,
-html[data-sigaa-extension-active='true'] .jscalendar-DB-div-style .jscalendar-DB-body-style td {
+html:not([data-sigaa-extension-active='false']) #formAva\:dataInicioDispArquivoSpan_calendarDivm .jscalendar-DB-body-style td,
+html:not([data-sigaa-extension-active='false']) .jscalendar-DB-div-style .jscalendar-DB-body-style td {
   padding: 0;
 }
 
-html[data-sigaa-extension-active='true'] #formAva\:dataInicioDispArquivoSpan_calendarDivm .jscalendar-DB-normal-day-style,
-html[data-sigaa-extension-active='true'] .jscalendar-DB-div-style .jscalendar-DB-normal-day-style {
+html:not([data-sigaa-extension-active='false']) #formAva\:dataInicioDispArquivoSpan_calendarDivm .jscalendar-DB-normal-day-style,
+html:not([data-sigaa-extension-active='false']) .jscalendar-DB-div-style .jscalendar-DB-normal-day-style {
   padding: 4px;
 }
 
-html[data-sigaa-extension-active='true'] #formAva\:dataInicioDispArquivoSpan_selectYearDiv {
+html:not([data-sigaa-extension-active='false']) #formAva\:dataInicioDispArquivoSpan_selectYearDiv {
   left: 182px !important;
   top: 8px !important;
 }
 
-html[data-sigaa-extension-active='true'] #formAva\:dataInicioDispArquivoSpan_selectMonthDiv {
+html:not([data-sigaa-extension-active='false']) #formAva\:dataInicioDispArquivoSpan_selectMonthDiv {
   left: 107px !important;
   top: 8px !important;
 }

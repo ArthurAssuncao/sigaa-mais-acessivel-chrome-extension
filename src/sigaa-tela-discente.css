@@ -1,0 +1,249 @@
+html:not([data-sigaa-extension-active='false']) #menu-dropdown .wrapper table.ThemeOfficeMenu tbody tr td.ThemeOfficeMainItem,
+html:not([data-sigaa-extension-active='false']) #menu-dropdown .wrapper table.ThemeOfficeMenu tbody tr td.ThemeOfficeMainItemHover {
+  padding: 8px 4px;
+  transition: background 0.5s ease;
+}
+
+html:not([data-sigaa-extension-active='false']) #menu-dropdown .wrapper table.ThemeOfficeMenu tbody tr td.ThemeOfficeMainItem:hover,
+html:not([data-sigaa-extension-active='false']) #menu-dropdown .wrapper table.ThemeOfficeMenu tbody tr td.ThemeOfficeMainItemHover:hover {
+  cursor: pointer;
+}
+
+html:not([data-sigaa-extension-active='false']) #menu-dropdown
+.wrapper
+div.ThemeOfficeSubMenu
+table.ThemeOfficeSubMenuTable
+tbody tr.ThemeOfficeMenuItem,
+html:not([data-sigaa-extension-active='false']) #menu-dropdown
+.wrapper
+div.ThemeOfficeSubMenu
+table.ThemeOfficeSubMenuTable
+tbody tr.ThemeOfficeMenuItemHover {
+  transition: background 0.5s ease;
+}
+
+html:not([data-sigaa-extension-active='false']) #menu-dropdown
+.wrapper
+div.ThemeOfficeSubMenu
+table.ThemeOfficeSubMenuTable
+tbody tr.ThemeOfficeMenuItem td,
+html:not([data-sigaa-extension-active='false']) #menu-dropdown
+.wrapper
+div.ThemeOfficeSubMenu
+table.ThemeOfficeSubMenuTable
+tbody tr.ThemeOfficeMenuItemHover td {
+  padding: 8px 4px;
+}
+
+html:not([data-sigaa-extension-active='false']) #menu-dropdown
+.wrapper
+div.ThemeOfficeSubMenu
+table.ThemeOfficeSubMenuTable
+tbody tr.ThemeOfficeMenuItem td:hover,
+html:not([data-sigaa-extension-active='false']) #menu-dropdown
+.wrapper
+div.ThemeOfficeSubMenu
+table.ThemeOfficeSubMenuTable
+tbody tr.ThemeOfficeMenuItemHover td:hover {
+  cursor: pointer;
+}
+
+html:not([data-sigaa-extension-active='false']) .ui-button {
+  min-height: 32px;
+  min-width: 32px;
+}
+
+html:not([data-sigaa-extension-active='false']) #auxEsconderSubMenu {
+  display: none;
+}
+
+html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual {
+  float: right;
+  position: relative;
+}
+
+html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button#formAcoesTurma\:botaoTrocarTurma {
+  color: #111;
+  top: 1px;
+}
+
+html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button#formAcoesTurma\:botaoTrocarTurma .botaoTrocarTurma {
+  background-image: none;
+  background-color: #111;
+  -webkit-mask-image: url("https://api.iconify.design/akar-icons/arrow-back-thick-fill.svg");
+          mask-image: url("https://api.iconify.design/akar-icons/arrow-back-thick-fill.svg");
+  transform: scale(0.8);
+}
+
+html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button#formAcoesTurma\:botaoTrocarTurma .ui-button-text {
+  line-height: initial;
+}
+
+html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default:hover span.ui-icon {
+  background-color: #111;
+}
+
+html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoPortal, html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoImprimir, html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAulasPaginadas, html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoTrocarTurma, html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoOpcoesTurma, html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAtivarEdicao {
+  background-image: none;
+  background-color: #111;
+}
+
+html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoPortal:hover, html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoImprimir:hover, html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAulasPaginadas:hover, html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoTrocarTurma:hover, html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoOpcoesTurma:hover, html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAtivarEdicao:hover {
+  background-color: #111;
+}
+
+html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoPortal {
+  -webkit-mask-image: url("https://api.iconify.design/clarity/home-solid.svg");
+          mask-image: url("https://api.iconify.design/clarity/home-solid.svg");
+}
+
+html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoImprimir {
+  -webkit-mask-image: url("https://api.iconify.design/fluent/print-24-filled.svg");
+          mask-image: url("https://api.iconify.design/fluent/print-24-filled.svg");
+}
+
+html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAulasPaginadas {
+  -webkit-mask-image: url("https://api.iconify.design/heroicons-outline/switch-horizontal.svg");
+          mask-image: url("https://api.iconify.design/heroicons-outline/switch-horizontal.svg");
+}
+
+html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoTrocarTurma {
+  -webkit-mask-image: url("https://api.iconify.design/akar-icons/arrow-back-thick-fill.svg");
+          mask-image: url("https://api.iconify.design/akar-icons/arrow-back-thick-fill.svg");
+}
+
+html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoOpcoesTurma {
+  -webkit-mask-image: url("https://api.iconify.design/ci/settings-filled.svg");
+          mask-image: url("https://api.iconify.design/ci/settings-filled.svg");
+}
+
+html:not([data-sigaa-extension-active='false']) #menuTurmaVirtual #formAcoesTurma button.ui-button-icon-only.ui-state-default span.ui-icon.botaoAtivarEdicao {
+  -webkit-mask-image: url("https://api.iconify.design/clarity/edit-solid.svg");
+          mask-image: url("https://api.iconify.design/clarity/edit-solid.svg");
+}
+
+html:not([data-sigaa-extension-active='false']) #barraEsquerda,
+html:not([data-sigaa-extension-active='false']) #barraDireita {
+  top: 76px;
+}
+
+html:not([data-sigaa-extension-active='false']) .ui-layout-pane:not(.ui-layout-center) td:first-of-type,
+html:not([data-sigaa-extension-active='false']) #barraEsquerda td:first-of-type {
+  color: #111 !important;
+}
+
+html:not([data-sigaa-extension-active='false']) .ui-layout-pane:not(.ui-layout-center) table tbody tr td,
+html:not([data-sigaa-extension-active='false']) #barraEsquerda table tbody tr td {
+  color: #111;
+  min-height: 32px;
+  height: 32px !important;
+  background: linear-gradient(180deg, #d5e4f5 0%, #aec9ec 50%, #d5e4f5 100%) !important;
+}
+
+html:not([data-sigaa-extension-active='false']) .ui-layout-pane:not(.ui-layout-center) .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-header-act,
+html:not([data-sigaa-extension-active='false']) .ui-layout-pane:not(.ui-layout-center) .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-header,
+html:not([data-sigaa-extension-active='false']) #barraEsquerda .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-header-act,
+html:not([data-sigaa-extension-active='false']) #barraEsquerda .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-header {
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+  background-position-x: 6px;
+  text-indent: 24px;
+}
+
+html:not([data-sigaa-extension-active='false']) .ui-layout-pane:not(.ui-layout-center) .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-content-exterior table tbody tr .rich-panelbar-content a div,
+html:not([data-sigaa-extension-active='false']) #barraEsquerda .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-content-exterior table tbody tr .rich-panelbar-content a div {
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 2px;
+  text-indent: 0px;
+  padding-left: 16px;
+  min-height: 32px;
+  height: 32px;
+  transition: background 0.5s ease;
+}
+
+html:not([data-sigaa-extension-active='false']) .ui-layout-pane:not(.ui-layout-center) .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-content-exterior table tbody tr .rich-panelbar-content a div img,
+html:not([data-sigaa-extension-active='false']) #barraEsquerda .rich-panelbar.rich-panelbar-b .rich-panelbar.rich-panelbar-interior .rich-panelbar-content-exterior table tbody tr .rich-panelbar-content a div img {
+  margin-left: 0px !important;
+  margin-right: 6px;
+}
+
+html:not([data-sigaa-extension-active='false']) .rich-stglpanel-header.headerBloco {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  color: #111;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  min-height: 32px;
+  height: 32px !important;
+  background: linear-gradient(180deg, #d5e4f5 0%, #aec9ec 50%, #d5e4f5 100%) !important;
+}
+
+html:not([data-sigaa-extension-active='false']) .rich-stglpanel-body .progress .progress-bar {
+  background: linear-gradient(45deg, #d5e4f5 0%, #aec9ec 50%, #d5e4f5 100%);
+  color: #111;
+}
+
+html:not([data-sigaa-extension-active='false']) #conteudo {
+  inset-block-start: 76px;
+}
+
+html:not([data-sigaa-extension-active='false']) .ui-layout-resizer.ui-layout-resizer-south.ui-layout-resizer-open.ui-layout-resizer-south-open {
+  bottom: 32px !important;
+}
+
+html:not([data-sigaa-extension-active='false']) .ui-layout-pane table:not(.jscalendar-DB-table-style) tbody tr td {
+  color: #111;
+  min-height: 32px;
+  height: 32px !important;
+}
+
+html:not([data-sigaa-extension-active='false']) .ui-layout-pane table:not(.jscalendar-DB-table-style) tbody tr td span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: relative !important;
+}
+
+html:not([data-sigaa-extension-active='false']) .ui-layout-pane table:not(.jscalendar-DB-table-style) tbody tr td span img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  cursor: pointer;
+}
+
+html:not([data-sigaa-extension-active='false']) .ui-layout-pane table:not(.jscalendar-DB-table-style) tbody tr td span select {
+  min-width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+html:not([data-sigaa-extension-active='false']) #formAva .topico-aula .titulo {
+  background: #f0f0f0;
+  padding: 10px !important;
+  color: #111;
+}
+
+html:not([data-sigaa-extension-active='false']) #formAva .topico-aula .conteudotopico {
+  border: 1px solid #ccc;
+  padding: 6px;
+  border-top: 0;
+  font-size: 0.8rem !important;
+  line-height: 1rem !important;
+}
+
+html:not([data-sigaa-extension-active='false']) .botoes .other-actions {
+  display: flex;
+  transform: translateX(-100%);
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho.ui-layout-north {
+  min-height: 76px;
+}
+
+html:not([data-sigaa-extension-active='false']) #conteudo {
+  inset-block-start: 76px;
+}

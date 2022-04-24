@@ -1,0 +1,46 @@
+.ui-layout-pane {
+  table:not(.jscalendar-DB-table-style) tbody tr td {
+    color: $color-text-title-section;
+    min-height: $size-height-painel-item;
+    height: $size-height-painel-item !important;
+
+    span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      position: relative !important;
+
+      img {
+        object-fit: contain;
+        cursor: pointer;
+      }
+
+      select {
+        min-width: 32px;
+        height: 32px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+#formAva .topico-aula {
+  .titulo {
+    background: rgb(240, 240, 240);
+    padding: 10px !important;
+    color: #111;
+  }
+
+  .conteudotopico {
+    border: 1px solid #ccc;
+    padding: 6px;
+    border-top: 0;
+    font-size: 0.8rem !important;
+    line-height: 1rem !important;
+  }
+}
+
+.botoes .other-actions {
+  display: flex;
+  transform: translateX(-100%);
+}

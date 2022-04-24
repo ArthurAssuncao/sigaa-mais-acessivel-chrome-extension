@@ -1,0 +1,13 @@
+html:not([data-sigaa-extension-active='false']) a {
+  line-height: normal;
+}
+
+html:not([data-sigaa-extension-active='false']) #conteudo #menu_principal #modulos ul li:not(.off):before, html:not([data-sigaa-extension-active='false']) #conteudo #menu_principal #portais ul li:not(.off):before {
+  content: '';
+  display: block;
+  height: 100%;
+  background: #24aeff;
+  background-image: linear-gradient(to right bottom, rgba(36, 174, 255, 0.1), #15428b);
+  filter: opacity(0.1);
+  z-index: -1;
+}

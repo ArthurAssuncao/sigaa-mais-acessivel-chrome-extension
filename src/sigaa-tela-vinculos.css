@@ -1,0 +1,11 @@
+html:not([data-sigaa-extension-active='false']) .formulario table.listagem > tbody tr:hover {
+  background-color: rgba(36, 174, 255, 0.1);
+}
+
+html:not([data-sigaa-extension-active='false']) .formulario table.listagem > tbody tr:hover td#tdTipo a {
+  font-weight: bold;
+}
+
+html:not([data-sigaa-extension-active='false']) .formulario table.listagem > tbody tr td {
+  padding: 12px 3px;
+}

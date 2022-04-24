@@ -1,0 +1,106 @@
+body #cabecalho {
+  min-height: 76px;
+  background-color: #c4d2eb;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  &.ui-layout-north {
+    // min-height: 124px;
+    min-height: 80px;
+  }
+
+  #info-sistema {
+    width: 100%;
+    min-height: 35px;
+    display: flex;
+    align-items: center;
+
+
+    a {
+      &:hover {
+        color: #fff !important;
+      }
+    }
+
+    div.dir {
+      top: 0;
+      display: flex;
+      min-height: 32px;
+      align-items: center;
+
+      #relogioAva{
+        padding: 0 5px;
+      }
+
+      .ajuda-link{
+        padding-right: 282px !important;
+      }
+
+      span.acessibilidade,
+      span.sair-sistema {
+        display: flex;
+        align-items: center;
+        border-color: $color-bg-blue;
+        min-height: 32px;
+        a {
+          min-height: 32px;
+          font-size: 1.2em;
+          padding: 5px;
+
+          &:hover {
+            background-color: $color-primary-opac-10;
+          }
+        }
+      }
+
+      span.acessibilidade{
+        display: flex;
+        flex-direction: row;
+      }
+
+      #tempoSessao {
+        display: flex;
+        align-items: center;
+        min-height: 32px;
+        font-size: 1.1em;
+        margin-left: 8px;
+
+      }
+    }
+  }
+
+  #painelDadosUsuario {
+    margin-top: 5px !important;
+    p {
+      font-size: 0.8rem !important;
+      a {
+        font-size: 0.7rem !important;
+      }
+    }
+    div {
+      font-size: 0.7rem !important;
+    }
+  }
+
+  #painel-usuario #menu-usuario {
+    ul li {
+      border: 2px solid transparent;
+      transition: all 0.5s ease;
+      margin: 0;
+      
+      &:hover{
+        border-color: $color-accent;
+      }
+      a#show-modulos,
+      a {
+        display: flex;
+        align-items: center;
+        min-height: 32px;
+        background-position: 5px 8px;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+}

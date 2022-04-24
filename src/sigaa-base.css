@@ -1,0 +1,350 @@
+html:not([data-sigaa-extension-active='false']) {
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+html:not([data-sigaa-extension-active='false']) ::-webkit-scrollbar {
+  width: 10px;
+}
+
+html:not([data-sigaa-extension-active='false']) ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+html:not([data-sigaa-extension-active='false']) ::-webkit-scrollbar-thumb {
+  background: #c4d2eb;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+html:not([data-sigaa-extension-active='false']) ::-webkit-scrollbar-thumb:hover {
+  background: #111;
+}
+
+html:not([data-sigaa-extension-active='false']) body {
+  background-color: #fafafa;
+}
+
+html:not([data-sigaa-extension-active='false']) body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+html:not([data-sigaa-extension-active='false']) h4, html:not([data-sigaa-extension-active='false']) h5, html:not([data-sigaa-extension-active='false']) h6 {
+  font-size: 0.9rem !important;
+}
+
+html:not([data-sigaa-extension-active='false']) small {
+  font-size: 0.8rem;
+}
+
+html:not([data-sigaa-extension-active='false']) input {
+  transition: background 0.5s ease;
+}
+
+html:not([data-sigaa-extension-active='false']) input:hover {
+  outline-color: #24aeff;
+}
+
+html:not([data-sigaa-extension-active='false']) input:focus-visible {
+  outline-color: #24aeff;
+}
+
+html:not([data-sigaa-extension-active='false']) input[type='file'] {
+  min-height: 48px;
+  border: none;
+  transform: translateY(8px);
+}
+
+html:not([data-sigaa-extension-active='false']) input[type='submit'], html:not([data-sigaa-extension-active='false']) input[type='button'] {
+  min-height: 48px;
+  min-width: 140px;
+  border: none;
+  transition: background-color 0.5s ease;
+  font-size: 1.05rem;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+html:not([data-sigaa-extension-active='false']) input[type='submit']:hover, html:not([data-sigaa-extension-active='false']) input[type='button']:hover {
+  background-color: #24aeff;
+  cursor: pointer;
+}
+
+html:not([data-sigaa-extension-active='false']) ::-webkit-file-upload-button {
+  background: rgba(36, 174, 255, 0.1);
+  color: #111;
+  padding: 12px;
+  border: none;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+html:not([data-sigaa-extension-active='false']) ::-webkit-file-upload-button:hover {
+  cursor: pointer;
+  background: #24aeff;
+}
+
+html:not([data-sigaa-extension-active='false']) * {
+  box-sizing: border-box;
+}
+
+html:not([data-sigaa-extension-active='false']) a {
+  line-height: 1.2rem;
+}
+
+html:not([data-sigaa-extension-active='false']) a:hover {
+  color: #111 !important;
+  text-decoration: underline;
+}
+
+html:not([data-sigaa-extension-active='false']) input {
+  min-height: 48px;
+  transition: background 0.5s ease;
+}
+
+html:not([data-sigaa-extension-active='false']) input:hover {
+  outline-color: #24aeff;
+}
+
+html:not([data-sigaa-extension-active='false']) input:focus-visible {
+  outline-color: #24aeff;
+}
+
+html:not([data-sigaa-extension-active='false']) input[type='checkbox'] {
+  visibility: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(8px);
+  transition: background 0.5s ease;
+}
+
+html:not([data-sigaa-extension-active='false']) input[type='checkbox']:hover {
+  cursor: pointer;
+}
+
+html:not([data-sigaa-extension-active='false']) input[type='checkbox']:hover:before {
+  background-color: #ccc;
+}
+
+html:not([data-sigaa-extension-active='false']) input[type='checkbox']:hover:checked:before {
+  background-color: #15428b;
+}
+
+html:not([data-sigaa-extension-active='false']) input[type='checkbox']:before {
+  content: '';
+  height: 26px;
+  width: 26px;
+  min-height: 26px;
+  min-width: 26px;
+  display: inline-block;
+  background-color: #ececec;
+  visibility: visible;
+  box-sizing: border-box;
+  transition: background 0.5s ease;
+}
+
+html:not([data-sigaa-extension-active='false']) input[type='checkbox']:before:hover {
+  background-color: #ccc;
+}
+
+html:not([data-sigaa-extension-active='false']) input[type='checkbox']:checked:before {
+  height: 32px;
+  width: 32px;
+  min-height: 32px;
+  min-width: 32px;
+  background-color: #24aeff;
+  mask-image: url("https://api.iconify.design/ant-design/check-square-filled.svg");
+  -webkit-mask-image: url("https://api.iconify.design/ant-design/check-square-filled.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: 32px;
+  -webkit-mask-size: 32px;
+}
+
+html:not([data-sigaa-extension-active='false']) input[type='checkbox']:checked:before:hover {
+  background-color: #15428b;
+}
+
+html:not([data-sigaa-extension-active='false']) input[type='file'] {
+  border: none;
+  transform: translateY(8px);
+}
+
+html:not([data-sigaa-extension-active='false']) input[type='submit'], html:not([data-sigaa-extension-active='false']) input[type='button'] {
+  min-width: 140px;
+  border: none;
+  transition: background-color 0.5s ease;
+  font-size: 1.05rem;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+html:not([data-sigaa-extension-active='false']) input[type='submit']:hover, html:not([data-sigaa-extension-active='false']) input[type='button']:hover {
+  background-color: #24aeff;
+  cursor: pointer;
+}
+
+html:not([data-sigaa-extension-active='false']) input[type='password'], html:not([data-sigaa-extension-active='false']) input[type='text'] {
+  min-width: 240px;
+  padding-left: 8px;
+  border-color: transparent;
+  outline-color: transparent;
+  background: rgba(36, 174, 255, 0.1);
+}
+
+html:not([data-sigaa-extension-active='false']) input[type='password']:focus, html:not([data-sigaa-extension-active='false']) input[type='text']:focus {
+  outline-color: #24aeff;
+}
+
+html:not([data-sigaa-extension-active='false']) ::-webkit-file-upload-button {
+  background: rgba(36, 174, 255, 0.1);
+  color: #111;
+  padding: 12px;
+  border: none;
+}
+
+html:not([data-sigaa-extension-active='false']) ::-webkit-file-upload-button:hover {
+  cursor: pointer;
+  background: #24aeff;
+}
+
+html:not([data-sigaa-extension-active='false']) select {
+  min-width: 32px;
+  max-width: 90%;
+  height: 32px;
+  border: none;
+  background: rgba(36, 174, 255, 0.1);
+  transition: background 0.5s ease;
+}
+
+html:not([data-sigaa-extension-active='false']) select:focus-visible {
+  outline-color: #24aeff;
+}
+
+html:not([data-sigaa-extension-active='false']) select#formAva\:possuiNota {
+  margin-left: 6px;
+}
+
+html:not([data-sigaa-extension-active='false']) select:hover {
+  cursor: pointer;
+  outline: 2px solid #24aeff;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho {
+  min-height: 76px;
+  background-color: #c4d2eb;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho.ui-layout-north {
+  min-height: 80px;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #info-sistema {
+  width: 100%;
+  min-height: 35px;
+  display: flex;
+  align-items: center;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #info-sistema a:hover {
+  color: #fff !important;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #info-sistema div.dir {
+  top: 0;
+  display: flex;
+  min-height: 32px;
+  align-items: center;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #info-sistema div.dir #relogioAva {
+  padding: 0 5px;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #info-sistema div.dir .ajuda-link {
+  padding-right: 282px !important;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #info-sistema div.dir span.acessibilidade,
+html:not([data-sigaa-extension-active='false']) body #cabecalho #info-sistema div.dir span.sair-sistema {
+  display: flex;
+  align-items: center;
+  border-color: #c4d2eb;
+  min-height: 32px;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #info-sistema div.dir span.acessibilidade a,
+html:not([data-sigaa-extension-active='false']) body #cabecalho #info-sistema div.dir span.sair-sistema a {
+  min-height: 32px;
+  font-size: 1.2em;
+  padding: 5px;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #info-sistema div.dir span.acessibilidade a:hover,
+html:not([data-sigaa-extension-active='false']) body #cabecalho #info-sistema div.dir span.sair-sistema a:hover {
+  background-color: rgba(36, 174, 255, 0.1);
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #info-sistema div.dir span.acessibilidade {
+  display: flex;
+  flex-direction: row;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #info-sistema div.dir #tempoSessao {
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+  font-size: 1.1em;
+  margin-left: 8px;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #painelDadosUsuario {
+  margin-top: 5px !important;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #painelDadosUsuario p {
+  font-size: 0.8rem !important;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #painelDadosUsuario p a {
+  font-size: 0.7rem !important;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #painelDadosUsuario div {
+  font-size: 0.7rem !important;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #painel-usuario #menu-usuario ul li {
+  border: 2px solid transparent;
+  transition: all 0.5s ease;
+  margin: 0;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #painel-usuario #menu-usuario ul li:hover {
+  border-color: #15428b;
+}
+
+html:not([data-sigaa-extension-active='false']) body #cabecalho #painel-usuario #menu-usuario ul li a#show-modulos,
+html:not([data-sigaa-extension-active='false']) body #cabecalho #painel-usuario #menu-usuario ul li a {
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+  background-position: 5px 8px;
+  transition: all 0.5s ease;
+}
+
+html:not([data-sigaa-extension-active='false']) body #rodape {
+  min-height: 32px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}

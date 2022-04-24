@@ -101,8 +101,6 @@ async function updateIcon (activeInfo, activateExtension = false) {
   });
 }
 
-chrome.tabs.onActivated.addListener (activeInfo => updateIcon (activeInfo));
-
 async function defineState () {
   const isActivated = await getState ();
   console.log (isActivated);
@@ -113,4 +111,9 @@ async function defineState () {
   }
 }
 
-defineState ();
+async function start () {
+  chrome.tabs.onActivated.addListener (activeInfo => updateIcon (activeInfo));
+  defineState ();
+}
+
+start ();

@@ -1,0 +1,29 @@
+$size-height-painel-item: 32px;
+
+.ui-layout-pane:not(.ui-layout-center),
+#menuDropDown {
+  td:first-of-type {
+    color: $color-text !important;
+  }
+  .rich-ddmenu-label {
+    &.rich-ddmenu-label-select {
+      border-color: none !important;
+      background: $color-bg-blue !important;
+    }
+    .rich-label-text-decor {
+      table tbody th td {
+        background: transparent !important;
+      }
+    }
+  }
+
+  .rich-toolbar-item {
+    .rich-menu-list-bg {
+      .rich-menu-item {
+        display: flex !important;
+        align-items: center;
+        min-height: 32px;
+      }
+    }
+  }
+}

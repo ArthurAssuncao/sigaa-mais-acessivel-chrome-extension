@@ -1,0 +1,23 @@
+html:not([data-sigaa-extension-active='false']) .painel {
+  border: 2px solid transparent;
+  transition: all 0.5s ease;
+}
+
+html:not([data-sigaa-extension-active='false']) .painel:hover {
+  border-color: #15428b;
+}
+
+html:not([data-sigaa-extension-active='false']) a[href="/sigaa/public/cadastro/familiares.jsf"], html:not([data-sigaa-extension-active='false']) a[href="/sigaa/public/cadastro/discente.jsf"], html:not([data-sigaa-extension-active='false']) a[href="/admin/auto_cadastro/form.jsf?origem=2"] {
+  display: inline-block;
+  align-items: center;
+  min-height: 32px;
+  transition: all 0.5s ease;
+  background-color: rgba(36, 174, 255, 0.1);
+  padding: 0.5rem 1rem;
+  margin: 0.2rem;
+  border: 2px solid transparent;
+}
+
+html:not([data-sigaa-extension-active='false']) a[href="/sigaa/public/cadastro/familiares.jsf"]:hover, html:not([data-sigaa-extension-active='false']) a[href="/sigaa/public/cadastro/discente.jsf"]:hover, html:not([data-sigaa-extension-active='false']) a[href="/admin/auto_cadastro/form.jsf?origem=2"]:hover {
+  border-color: #15428b;
+}

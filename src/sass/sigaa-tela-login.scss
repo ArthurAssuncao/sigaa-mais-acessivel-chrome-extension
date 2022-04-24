@@ -1,0 +1,5 @@
+@import '_parts/_colors.scss';
+
+html:not([data-sigaa-extension-active='false']) {
+  @import '_telas/_tela-login.scss';
+}

@@ -1,0 +1,3 @@
+html:not([data-sigaa-extension-active='false']) {
+  @import '_parts/_base.scss';
+}

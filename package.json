@@ -1,6 +1,6 @@
 {
   "name": "sigaa-chrome-extension",
-  "version": "1.0.0",
+  "version": "0.4",
   "description": "Torne o SIGAA Mais acessível",
   "main": "popup.html",
   "author": "Arthur Assuncao",

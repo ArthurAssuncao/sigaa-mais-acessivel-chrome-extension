@@ -1,0 +1,14 @@
+@import '../_parts/_colors.scss';
+
+.formulario table.listagem > tbody tr {
+  &:hover {
+    background-color: $color-primary-opac-10;
+    td#tdTipo a {
+      font-weight: bold;
+    }
+  }
+
+  td {
+    padding: 12px 3px;
+  }
+}

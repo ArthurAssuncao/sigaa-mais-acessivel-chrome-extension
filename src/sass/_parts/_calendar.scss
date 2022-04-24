@@ -1,0 +1,27 @@
+// calendario
+#formAva\:dataInicioDispArquivoSpan_calendarDivm,
+.jscalendar-DB-div-style {
+  left: 32px !important;
+  top: -24px !important;
+
+  .jscalendar-DB-title-background-style {
+    background-color: $color-primary-opac-10;
+  }
+  .jscalendar-DB-body-style {
+    td {
+      padding: 0;
+    }
+  }
+  .jscalendar-DB-normal-day-style {
+    padding: 4px;
+  }
+}
+
+#formAva\:dataInicioDispArquivoSpan_selectYearDiv {
+  left: 182px !important;
+  top: 8px !important;
+}
+#formAva\:dataInicioDispArquivoSpan_selectMonthDiv {
+  left: 107px !important;
+  top: 8px !important;
+}
